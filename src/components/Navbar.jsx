@@ -26,6 +26,7 @@ const Navbar = () => {
     { label: 'Schedule', path: '/schedule' },
     { label: 'For Students', path: '/students' },
     { label: 'Partners', path: '/partners' },
+    { label: 'Pitch Your Idea', path: '/pitch-your-idea' },
     { label: 'Contact', path: '/contact' }
   ];
 
