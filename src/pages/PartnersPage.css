@@ -1,1 +1,63 @@
 /* Shared styles are in SchedulePage.css */
+
+.partnership-cta {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+}
+
+.partnership-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.partnership-container h2 {
+  font-family: 'Sora', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.partnership-container p {
+  font-size: 1.125rem;
+  margin-bottom: 32px;
+  opacity: 0.95;
+}
+
+.partnership-container .cta-button {
+  display: inline-block;
+  padding: 16px 48px;
+  background: white;
+  color: #2563eb;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.partnership-container .cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .partnership-cta {
+    padding: 60px 20px;
+  }
+  
+  .partnership-container h2 {
+    font-size: 2rem;
+  }
+  
+  .partnership-container p {
+    font-size: 1rem;
+  }
+  
+  .partnership-container .cta-button {
+    padding: 14px 32px;
+    font-size: 1rem;
+  }
+}

@@ -1,7 +1,10 @@
 import StudentsBenefits from '../components/StudentsBenefits';
+import usePageTitle from '../hooks/usePageTitle';
 import './StudentsPage.css';
 
 const StudentsPage = () => {
+  usePageTitle('For Students');
+  
   return (
     <div className="students-page">
       <div className="page-hero">
@@ -19,7 +22,7 @@ const StudentsPage = () => {
         <div className="registration-container">
           <h2>Ready to Join IAC 2026?</h2>
           <p>Open to all engineering students across Gujarat. Limited seats available.</p>
-          <a href="/contact" className="cta-button">Register Your Interest</a>
+          <a href="/contact" className="cta-button">Register as Participant</a>
         </div>
       </section>
     </div>

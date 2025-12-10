@@ -81,9 +81,12 @@ const Contact = () => {
               </div>
             </div>
 
-            <button className="contact-cta-button">
+            <a 
+              href="mailto:cdc@iitram.ac.in?subject=IAC 2026 Query" 
+              className="contact-cta-button"
+            >
               Send Us Your Query
-            </button>
+            </a>
 
             <p className="contact-note">
               Registrations will open soon. Stay tuned for updates!

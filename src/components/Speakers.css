@@ -1,0 +1,163 @@
+.speakers {
+  padding: 100px 0;
+  background: white;
+}
+
+.speakers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.speakers-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 64px;
+}
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.speaker-card {
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 28px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.speaker-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.speaker-card:hover::before {
+  transform: scaleX(1);
+}
+
+.speaker-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.12);
+  border-color: rgba(37, 99, 235, 0.2);
+}
+
+.speaker-session-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+
+.speaker-info {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.speaker-name {
+  font-family: 'Sora', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 8px 0;
+}
+
+.speaker-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #475569;
+  margin: 0 0 4px 0;
+}
+
+.speaker-org {
+  font-size: 14px;
+  color: #2563eb;
+  margin: 0;
+  font-weight: 500;
+}
+
+.speaker-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.speaker-topic {
+  display: flex;
+  gap: 10px;
+  align-items: start;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #334155;
+}
+
+.topic-icon {
+  width: 18px;
+  height: 18px;
+  color: #64748b;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.speaker-schedule {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.schedule-day {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+  background: #f1f5f9;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.schedule-time {
+  font-size: 13px;
+  color: #64748b;
+}
+
+@media (max-width: 968px) {
+  .speakers {
+    padding: 80px 0;
+  }
+
+  .speakers-container {
+    padding: 0 20px;
+  }
+
+  .speakers-header {
+    margin-bottom: 48px;
+  }
+
+  .speakers-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .speaker-card {
+    padding: 24px;
+  }
+}

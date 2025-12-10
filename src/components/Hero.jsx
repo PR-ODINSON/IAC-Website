@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Countdown from './Countdown';
 import './Hero.css';
 
 const Hero = () => {
@@ -21,9 +22,11 @@ const Hero = () => {
           
           <p className="hero-description">
             CDC IITRAM's flagship initiative connecting students, academia, and industry 
-            through thought-provoking keynotes, panel discussions, and hands-on workshops. 
+            through thought-provoking keynotes and panel discussions. 
             Join us for two days of innovation, networking, and career opportunities.
           </p>
+
+          <Countdown />
           
           <div className="hero-meta">
             <div className="meta-item">
@@ -55,7 +58,7 @@ const Hero = () => {
           <div className="stat-card">
             <div className="stat-number">2</div>
             <div className="stat-label">Days of Innovation</div>
-            <div className="stat-detail">Talks · Panels · Workshops</div>
+            <div className="stat-detail">Keynotes · Panels · Discussions</div>
           </div>
           
           <div className="stat-card">

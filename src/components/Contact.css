@@ -140,6 +140,7 @@ a.info-value:hover {
 }
 
 .contact-cta-button {
+  display: block;
   width: 100%;
   background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
   border: none;
@@ -151,6 +152,8 @@ a.info-value:hover {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
 }
 
 .contact-cta-button:hover {

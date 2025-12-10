@@ -1,15 +1,21 @@
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Highlights from '../components/Highlights';
+import Speakers from '../components/Speakers';
+import FAQ from '../components/FAQ';
 import { Link } from 'react-router-dom';
+import usePageTitle from '../hooks/usePageTitle';
 import './Home.css';
 
 const Home = () => {
+  usePageTitle('');
+  
   return (
     <div className="home-page">
       <Hero />
       <About />
       <Highlights />
+      <Speakers />
       
       {/* Quick Links Section */}
       <section className="quick-links-section">
@@ -58,6 +64,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+      
+      <FAQ />
     </div>
   );
 };

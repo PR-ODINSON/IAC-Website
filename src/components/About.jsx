@@ -2,7 +2,7 @@ import './About.css';
 
 const About = () => {
   const objectives = [
-    "Facilitate industry exposure through talks, panels, and workshops",
+    "Facilitate industry exposure through keynotes and panel discussions",
     "Create networking opportunities with industry leaders, HRs, and startup founders",
     "Encourage student innovation via idea pitches and project showcases",
     "Enable collaborations with ecosystems like GIFT City, MSME, iCreate, and more"

@@ -1,7 +1,10 @@
 import Contact from '../components/Contact';
+import usePageTitle from '../hooks/usePageTitle';
 import './ContactPage.css';
 
 const ContactPage = () => {
+  usePageTitle('Contact Us');
+  
   return (
     <div className="contact-page">
       <div className="page-hero">

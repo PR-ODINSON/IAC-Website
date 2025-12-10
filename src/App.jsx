@@ -6,6 +6,7 @@ import SchedulePage from './pages/SchedulePage';
 import StudentsPage from './pages/StudentsPage';
 import PartnersPage from './pages/PartnersPage';
 import ContactPage from './pages/ContactPage';
+import NotFound from './pages/NotFound';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/students" element={<StudentsPage />} />
           <Route path="/partners" element={<PartnersPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>

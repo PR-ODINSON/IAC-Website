@@ -6,7 +6,7 @@ export const studentBenefits = [
   },
   {
     title: "Skill Development",
-    description: "Hands-on technical workshops covering AI, EV, Mechatronics, Smart Infrastructure, and more.",
+    description: "Learn from industry experts about cutting-edge technologies in AI, EV, Mechatronics, Smart Infrastructure, and more.",
     icon: "code"
   },
   {
