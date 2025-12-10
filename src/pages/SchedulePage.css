@@ -1,0 +1,57 @@
+.schedule-page,
+.students-page,
+.partners-page,
+.contact-page {
+  min-height: 100vh;
+  padding-top: 72px;
+}
+
+.page-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  padding: 80px 0;
+  margin-bottom: 0;
+}
+
+.page-hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  text-align: center;
+}
+
+.page-hero-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.02em;
+}
+
+.page-hero-description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 60px 0;
+  }
+
+  .page-hero-container {
+    padding: 0 20px;
+  }
+
+  .page-hero-title {
+    font-size: 32px;
+  }
+
+  .page-hero-description {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,233 @@
+.schedule {
+  padding: 100px 0;
+  background: white;
+}
+
+.schedule-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.schedule-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.day-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 48px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.day-tab {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.day-tab:hover {
+  border-color: #cbd5e1;
+  background: #f8fafc;
+}
+
+.day-tab-active {
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  border-color: #2563eb;
+}
+
+.day-tab-active:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+}
+
+.tab-day {
+  font-family: 'Sora', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.day-tab-active .tab-day {
+  color: white;
+}
+
+.tab-date {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.day-tab-active .tab-date {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.schedule-content {
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.schedule-theme {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.theme-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-right: 8px;
+}
+
+.theme-text {
+  font-family: 'Sora', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  font-style: italic;
+}
+
+.sessions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.session-item {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 32px;
+  position: relative;
+}
+
+.session-time {
+  display: flex;
+  align-items: start;
+  padding-top: 4px;
+}
+
+.time-text {
+  font-family: 'Sora', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2563eb;
+  background: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  display: inline-block;
+}
+
+.session-content {
+  position: relative;
+  padding-left: 28px;
+}
+
+.session-connector {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  background: #2563eb;
+  border-radius: 50%;
+  border: 3px solid #f8fafc;
+  box-shadow: 0 0 0 2px #2563eb;
+}
+
+.session-item:not(:last-child) .session-connector::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 12px;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 40px;
+  background: #cbd5e1;
+}
+
+.session-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.session-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #64748b;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .schedule {
+    padding: 80px 0;
+  }
+
+  .schedule-container {
+    padding: 0 20px;
+  }
+
+  .day-tabs {
+    gap: 12px;
+  }
+
+  .day-tab {
+    padding: 16px;
+  }
+
+  .tab-day {
+    font-size: 16px;
+  }
+
+  .tab-date {
+    font-size: 13px;
+  }
+
+  .schedule-content {
+    padding: 28px 20px;
+  }
+
+  .session-item {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .session-time {
+    padding-top: 0;
+  }
+
+  .time-text {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .session-content {
+    padding-left: 24px;
+  }
+
+  .session-title {
+    font-size: 16px;
+  }
+
+  .session-description {
+    font-size: 14px;
+  }
+}

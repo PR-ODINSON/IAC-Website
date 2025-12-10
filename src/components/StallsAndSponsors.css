@@ -1,0 +1,317 @@
+.stalls-sponsors {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #f8fafc 0%, white 100%);
+}
+
+.stalls-sponsors-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.stalls-sponsors-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 80px;
+}
+
+.subsection {
+  margin-bottom: 80px;
+}
+
+.subsection-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+.subsection-description {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #64748b;
+  margin: 0 auto 48px;
+  max-width: 600px;
+}
+
+.stalls-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.stall-card {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 32px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.stall-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e1;
+}
+
+.stall-featured {
+  border-color: #2563eb;
+  background: linear-gradient(135deg, #eff6ff 0%, white 100%);
+}
+
+.stall-featured:hover {
+  border-color: #1d4ed8;
+}
+
+.featured-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #2563eb;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stall-header {
+  text-align: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 24px;
+}
+
+.stall-name {
+  font-family: 'Sora', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 12px 0;
+}
+
+.stall-price {
+  font-family: 'Sora', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 6px;
+}
+
+.stall-period {
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.stall-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stall-feature {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #475569;
+}
+
+.feature-check {
+  width: 18px;
+  height: 18px;
+  color: #10b981;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.sponsor-card {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 36px;
+  transition: all 0.3s ease;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e1;
+}
+
+.sponsor-highlight {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-color: #0f172a;
+}
+
+.sponsor-highlight:hover {
+  border-color: #334155;
+}
+
+.sponsor-tier {
+  font-family: 'Sora', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.sponsor-highlight .sponsor-tier {
+  color: white;
+}
+
+.sponsor-price {
+  font-family: 'Sora', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.sponsor-highlight .sponsor-price {
+  color: #60a5fa;
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.sponsor-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sponsor-feature {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #475569;
+}
+
+.sponsor-highlight .sponsor-feature {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.sponsor-check {
+  width: 20px;
+  height: 20px;
+  color: #10b981;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.sponsor-highlight .sponsor-check {
+  color: #60a5fa;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  border-radius: 16px;
+  padding: 48px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.cta-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 12px 0;
+}
+
+.cta-description {
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 32px 0;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  background: white;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2563eb;
+  padding: 14px 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 968px) {
+  .stalls-sponsors {
+    padding: 80px 0;
+  }
+
+  .stalls-sponsors-container {
+    padding: 0 20px;
+  }
+
+  .stalls-sponsors-header {
+    margin-bottom: 60px;
+  }
+
+  .subsection {
+    margin-bottom: 60px;
+  }
+
+  .subsection-title {
+    font-size: 28px;
+  }
+
+  .stalls-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .sponsors-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .sponsor-card {
+    padding: 28px;
+  }
+
+  .cta-box {
+    padding: 36px 24px;
+  }
+
+  .cta-title {
+    font-size: 26px;
+  }
+}

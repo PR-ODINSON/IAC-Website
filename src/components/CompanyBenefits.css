@@ -1,0 +1,118 @@
+.company-benefits {
+  padding: 100px 0;
+  background: white;
+}
+
+.company-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.company-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 64px;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.company-benefit-card {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.company-benefit-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0f172a 0%, #334155 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.company-benefit-card:hover::before {
+  transform: scaleX(1);
+}
+
+.company-benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  border-color: rgba(15, 23, 42, 0.15);
+  background: white;
+}
+
+.company-benefit-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0 auto 24px;
+  transition: all 0.3s ease;
+}
+
+.company-benefit-card:hover .company-benefit-icon {
+  transform: scale(1.1) rotate(-5deg);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+.company-benefit-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.company-benefit-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 12px 0;
+}
+
+.company-benefit-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #64748b;
+  margin: 0;
+}
+
+@media (max-width: 968px) {
+  .company-benefits {
+    padding: 80px 0;
+  }
+
+  .company-container {
+    padding: 0 20px;
+  }
+
+  .company-header {
+    margin-bottom: 48px;
+  }
+
+  .company-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .company-benefit-card {
+    padding: 28px;
+  }
+}

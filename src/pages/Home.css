@@ -1,0 +1,111 @@
+.home-page {
+  min-height: 100vh;
+}
+
+.quick-links-section {
+  padding: 100px 0;
+  background: white;
+}
+
+.quick-links-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.quick-links-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #0f172a;
+  text-align: center;
+  margin: 0 0 48px 0;
+}
+
+.quick-links-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.quick-link-card {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.quick-link-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.15);
+  border-color: #2563eb;
+  background: white;
+}
+
+.quick-link-icon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.quick-link-card:hover .quick-link-icon {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.quick-link-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.quick-link-card h3 {
+  font-family: 'Sora', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+}
+
+.quick-link-card p {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+@media (max-width: 968px) {
+  .quick-links-section {
+    padding: 80px 0;
+  }
+
+  .quick-links-container {
+    padding: 0 20px;
+  }
+
+  .quick-links-title {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .quick-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .quick-links-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,61 @@
+.registration-cta {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  text-align: center;
+}
+
+.registration-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.registration-cta h2 {
+  font-family: 'Sora', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 16px 0;
+}
+
+.registration-cta p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 32px 0;
+}
+
+.registration-cta .cta-button {
+  background: white;
+  color: #2563eb;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.registration-cta .cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .registration-cta {
+    padding: 60px 0;
+  }
+
+  .registration-container {
+    padding: 0 20px;
+  }
+
+  .registration-cta h2 {
+    font-size: 28px;
+  }
+
+  .registration-cta p {
+    font-size: 16px;
+  }
+}
