@@ -40,15 +40,20 @@ const Navbar = () => {
           <span className="brand-sub">CDC – IITRAM</span>
         </Link>
 
-        <button 
-          className="hamburger-menu"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span className={mobileMenuOpen ? 'active' : ''}></span>
-          <span className={mobileMenuOpen ? 'active' : ''}></span>
-          <span className={mobileMenuOpen ? 'active' : ''}></span>
-        </button>
+        <div className="navbar-actions">
+          <Link to="/contact" className="register-button">
+            Register Interest
+          </Link>
+          <button 
+            className="hamburger-menu"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className={mobileMenuOpen ? 'active' : ''}></span>
+            <span className={mobileMenuOpen ? 'active' : ''}></span>
+            <span className={mobileMenuOpen ? 'active' : ''}></span>
+          </button>
+        </div>
       </div>
 
       <div className={`sidebar-menu ${mobileMenuOpen ? 'sidebar-open' : ''}`}>
@@ -62,9 +67,6 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <Link to="/contact" className="sidebar-cta">
-            Register Interest
-          </Link>
         </div>
       </div>
       

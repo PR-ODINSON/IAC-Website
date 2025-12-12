@@ -4,6 +4,100 @@
   text-align: center;
 }
 
+.invite-only-section {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #f0fdfa 0%, #ffffff 100%);
+}
+
+.invite-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 32px;
+  text-align: center;
+}
+
+.invite-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border: 2px solid #fbbf24;
+  border-radius: 50px;
+  margin-bottom: 24px;
+}
+
+.invite-badge svg {
+  width: 20px;
+  height: 20px;
+  stroke: #b45309;
+  stroke-width: 2;
+}
+
+.invite-badge span {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #b45309;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.invite-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.invite-description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #475569;
+  margin: 0 0 48px 0;
+}
+
+.invite-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.invite-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.invite-feature:hover {
+  border-color: #14b8a6;
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.1);
+}
+
+.feature-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #14b8a6;
+  stroke-width: 2.5;
+  flex-shrink: 0;
+}
+
+.invite-feature span {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.5;
+}
+
 .registration-container {
   max-width: 700px;
   margin: 0 auto;
@@ -57,6 +151,27 @@
 
   .registration-cta p {
     font-size: 16px;
+  }
+
+  .invite-only-section {
+    padding: 60px 0;
+  }
+
+  .invite-container {
+    padding: 0 20px;
+  }
+
+  .invite-title {
+    font-size: 32px;
+  }
+
+  .invite-description {
+    font-size: 16px;
+  }
+
+  .invite-features {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 }
 

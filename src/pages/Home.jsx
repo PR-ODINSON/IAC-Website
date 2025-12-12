@@ -18,7 +18,11 @@ const Home = () => {
       {/* Quick Links Section */}
       <section className="quick-links-section">
         <div className="quick-links-container">
-          <h2 className="quick-links-title">Explore More</h2>
+          <div className="section-label">Navigate</div>
+          <h2 className="quick-links-title">Explore Udgam 2026</h2>
+          <p className="quick-links-description">
+            Discover everything about the event — from schedules and speakers to participation opportunities and sponsorship details.
+          </p>
           <div className="quick-links-grid">
             <Link to="/schedule" className="quick-link-card">
               <div className="quick-link-icon">

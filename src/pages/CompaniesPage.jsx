@@ -1,4 +1,5 @@
 import CompanyBenefits from '../components/CompanyBenefits';
+import StallsAndSponsors from '../components/StallsAndSponsors';
 import usePageTitle from '../hooks/usePageTitle';
 import './CompaniesPage.css';
 
@@ -17,12 +18,44 @@ const CompaniesPage = () => {
         </div>
       </div>
       <CompanyBenefits />
+      <StallsAndSponsors showSponsorship={false} showCTA={false} />
       
-      <section className="registration-cta">
-        <div className="registration-container">
-          <h2>Partner With Udgam 2026</h2>
-          <p>Explore customized packages and maximize your brand's impact.</p>
-          <a href="/contact" className="cta-button">Enquire About Partnership</a>
+      <section className="interest-form-section">
+        <div className="interest-form-container">
+          <div className="form-header">
+            <h2 className="form-title">Interested in Booking a Stall?</h2>
+            <p className="form-description">
+              Want to set up a corporate stall at Udgam 2026? Express your interest below and 
+              our team will reach out to you with available slots, pricing, and booking details.
+            </p>
+          </div>
+          <div className="form-features">
+            <div className="form-feature">
+              <svg className="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Direct interaction with engineering students</span>
+            </div>
+            <div className="form-feature">
+              <svg className="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Showcase products and conduct activities</span>
+            </div>
+            <div className="form-feature">
+              <svg className="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>One-day or two-day stall options</span>
+            </div>
+            <div className="form-feature">
+              <svg className="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Prime location at the venue</span>
+            </div>
+          </div>
+          <a href="/contact" className="form-cta-button">Express Interest for Stall Booking</a>
         </div>
       </section>
     </div>

@@ -26,6 +26,30 @@
   justify-content: space-between;
 }
 
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.register-button {
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%);
+  color: white;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.register-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
+}
+
 .navbar-brand {
   display: flex;
   flex-direction: column;
@@ -126,25 +150,6 @@
   background: #f0fdfa;
   color: #14b8a6;
   border-left-color: #14b8a6;
-}
-
-.sidebar-cta {
-  margin: 20px 32px;
-  padding: 14px 24px;
-  background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%);
-  color: white;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: all 0.2s ease;
-}
-
-.sidebar-cta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
 }
 
 .sidebar-overlay {

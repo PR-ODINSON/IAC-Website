@@ -39,6 +39,94 @@
   margin-top: 4rem;
 }
 
+.interest-form-section {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #f0fdfa 0%, #ffffff 100%);
+}
+
+.interest-form-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.form-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.form-description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #475569;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.form-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.form-feature:hover {
+  border-color: #14b8a6;
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.1);
+}
+
+.form-feature .feature-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #14b8a6;
+  stroke-width: 2.5;
+  flex-shrink: 0;
+}
+
+.form-feature span {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.form-cta-button {
+  display: inline-block;
+  padding: 16px 40px;
+  background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(20, 184, 166, 0.3);
+}
+
+.form-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(20, 184, 166, 0.4);
+}
+
 .registration-container {
   max-width: 800px;
   margin: 0 auto;
@@ -108,5 +196,26 @@
   .cta-button {
     padding: 0.9rem 2rem;
     font-size: 1rem;
+  }
+
+  .interest-form-section {
+    padding: 60px 0;
+  }
+
+  .interest-form-container {
+    padding: 0 20px;
+  }
+
+  .form-title {
+    font-size: 32px;
+  }
+
+  .form-description {
+    font-size: 16px;
+  }
+
+  .form-features {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 }
