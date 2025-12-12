@@ -5,6 +5,7 @@ import './Navbar.css';
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [registerDropdownOpen, setRegisterDropdownOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -18,6 +19,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setMobileMenuOpen(false);
+    setRegisterDropdownOpen(false);
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
@@ -41,9 +43,82 @@ const Navbar = () => {
         </Link>
 
         <div className="navbar-actions">
-          <Link to="/contact" className="register-button">
-            Register Interest
-          </Link>
+          <div className="register-dropdown-container">
+            <button 
+              className="register-button"
+              onClick={() => setRegisterDropdownOpen(!registerDropdownOpen)}
+            >
+              Register Interest
+              <svg 
+                className={`dropdown-arrow ${registerDropdownOpen ? 'dropdown-arrow-open' : ''}`}
+                width="16" 
+                height="16" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            
+            {registerDropdownOpen && (
+              <>
+                <div className="register-dropdown">
+                  <div className="dropdown-header">
+                    <h3>What are you interested in?</h3>
+                  </div>
+                  <a 
+                    href="https://forms.gle/SoAjwWNzQzCJWLgs6" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="dropdown-item"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <div>
+                      <strong>Student Passes</strong>
+                      <span>Need passes for your college students</span>
+                    </div>
+                  </a>
+                  <a 
+                    href="https://forms.gle/C21fHj3MmK71Q8tU8" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="dropdown-item"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <div>
+                      <strong>Stall Booking</strong>
+                      <span>For companies to book exhibition stalls</span>
+                    </div>
+                  </a>
+                  <div className="dropdown-item dropdown-item-disabled">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                      <path d="M2 17l10 5 10-5"></path>
+                      <path d="M2 12l10 5 10-5"></path>
+                    </svg>
+                    <div>
+                      <strong>Sponsorship Interest</strong>
+                      <span>Coming soon</span>
+                    </div>
+                  </div>
+                </div>
+                <div 
+                  className="dropdown-overlay" 
+                  onClick={() => setRegisterDropdownOpen(false)}
+                />
+              </>
+            )}
+          </div>
           <button 
             className="hamburger-menu"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

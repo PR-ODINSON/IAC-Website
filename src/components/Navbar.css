@@ -32,22 +32,135 @@
   gap: 16px;
 }
 
+.register-dropdown-container {
+  position: relative;
+}
+
 .register-button {
   padding: 10px 24px;
   background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%);
   color: white;
-  text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 600;
   border-radius: 8px;
+  border: none;
+  cursor: pointer;
   transition: all 0.2s ease;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .register-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
+}
+
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow-open {
+  transform: rotate(180deg);
+}
+
+.register-dropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  width: 320px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  z-index: 1002;
+  animation: dropdownSlide 0.3s ease;
+}
+
+@keyframes dropdownSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-header {
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.dropdown-header h3 {
+  font-family: 'Sora', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: #0f172a;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.dropdown-item:hover {
+  background: #f0fdfa;
+  border-left-color: #14b8a6;
+}
+
+.dropdown-item svg {
+  width: 24px;
+  height: 24px;
+  color: #14b8a6;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.dropdown-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dropdown-item strong {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.dropdown-item span {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.dropdown-item-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.dropdown-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
 }
 
 .navbar-brand {

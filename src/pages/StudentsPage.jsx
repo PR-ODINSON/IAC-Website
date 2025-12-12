@@ -68,7 +68,7 @@ const StudentsPage = () => {
             If you'd like CDC IITRAM to send participation passes to your college, 
             express your interest below. We'll share the registration form soon.
           </p>
-          <a href="/contact" className="cta-button">Express Interest</a>
+          <a href="https://forms.gle/SoAjwWNzQzCJWLgs6" target="_blank" rel="noopener noreferrer" className="cta-button">Express Interest</a>
         </div>
       </section>
     </div>

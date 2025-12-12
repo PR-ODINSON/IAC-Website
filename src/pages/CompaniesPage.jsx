@@ -55,7 +55,7 @@ const CompaniesPage = () => {
               <span>Prime location at the venue</span>
             </div>
           </div>
-          <a href="/contact" className="form-cta-button">Express Interest for Stall Booking</a>
+          <a href="https://forms.gle/C21fHj3MmK71Q8tU8" target="_blank" rel="noopener noreferrer" className="form-cta-button">Express Interest for Stall Booking</a>
         </div>
       </section>
     </div>
