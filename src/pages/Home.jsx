@@ -1,7 +1,6 @@
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Highlights from '../components/Highlights';
-import Speakers from '../components/Speakers';
 import FAQ from '../components/FAQ';
 import { Link } from 'react-router-dom';
 import usePageTitle from '../hooks/usePageTitle';
@@ -15,7 +14,6 @@ const Home = () => {
       <Hero />
       <About />
       <Highlights />
-      <Speakers />
       
       {/* Quick Links Section */}
       <section className="quick-links-section">
@@ -42,14 +40,24 @@ const Home = () => {
               <p>Benefits and opportunities</p>
             </Link>
 
-            <Link to="/partners" className="quick-link-card">
+            <Link to="/companies" className="quick-link-card">
               <div className="quick-link-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h3>Partner With Us</h3>
-              <p>Sponsorship opportunities</p>
+              <h3>For Companies</h3>
+              <p>Partnership opportunities</p>
+            </Link>
+
+            <Link to="/sponsorship" className="quick-link-card">
+              <div className="quick-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3>Sponsorship</h3>
+              <p>Sponsorship packages</p>
             </Link>
 
             <Link to="/pitch-your-idea" className="quick-link-card">

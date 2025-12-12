@@ -68,7 +68,7 @@ const PitchYourIdea = () => {
           <h1 className="pitch-hero-title">Pitch Your Idea Competition</h1>
           <p className="pitch-hero-subtitle">
             Showcase your innovation, pitch to industry experts, and stand a chance to be among 
-            the top finalists at IAC 2026.
+            the top finalists at Udgam 2026.
           </p>
           <p className="pitch-hero-event">
             Part of Industry–Academia Conclave (IAC) 2026 · CDC, IITRAM
@@ -76,7 +76,7 @@ const PitchYourIdea = () => {
           
           <div className="pitch-hero-actions">
             <a 
-              href="mailto:cdc@iitram.ac.in?subject=Pitch Your Idea Registration - IAC 2026" 
+              href="mailto:cdc@iitram.ac.in?subject=Pitch Your Idea Registration - Udgam 2026" 
               className="pitch-cta-primary"
             >
               Register Your Idea
@@ -99,7 +99,7 @@ const PitchYourIdea = () => {
           
           <div className="overview-content">
             <p>
-              "Pitch Your Idea" is a flagship innovation competition under IAC 2026, designed to 
+              "Pitch Your Idea" is a flagship innovation competition under Udgam 2026, designed to 
               provide students with a platform to showcase their entrepreneurial spirit and technical 
               ingenuity. This competition brings together aspiring innovators and industry professionals 
               in a dynamic environment where ideas meet opportunity.
@@ -113,7 +113,7 @@ const PitchYourIdea = () => {
             <p>
               The focus is on three key aspects: demonstrating a clear understanding of the problem 
               you're solving, presenting an innovative and practical solution, and communicating your 
-              vision effectively. The competition spans <strong>two rounds across both days of IAC 2026</strong>, 
+              vision effectively. The competition spans <strong>two rounds across both days of Udgam 2026</strong>, 
               giving participants multiple opportunities to refine and present their ideas.
             </p>
           </div>
@@ -408,7 +408,7 @@ const PitchYourIdea = () => {
               <div className="timeline-content">
                 <h3 className="timeline-title">Winners Announcement</h3>
                 <p className="timeline-date">Closing Ceremony – Day 2</p>
-                <p className="timeline-description">Winners declared during the IAC 2026 closing event.</p>
+                <p className="timeline-description">Winners declared during the Udgam 2026 closing event.</p>
               </div>
             </div>
           </div>
@@ -451,7 +451,7 @@ const PitchYourIdea = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
               </svg>
               <h3>Visibility</h3>
-              <p>Feature in IAC 2026 communication channels including website, social media, and event materials.</p>
+              <p>Feature in Udgam 2026 communication channels including website, social media, and event materials.</p>
             </div>
           </div>
         </div>
@@ -486,11 +486,11 @@ const PitchYourIdea = () => {
         <div className="pitch-cta-container">
           <h2 className="cta-title">Ready to Pitch Your Idea?</h2>
           <p className="cta-description">
-            Don't miss this opportunity to showcase your innovation at IAC 2026. 
+            Don't miss this opportunity to showcase your innovation at Udgam 2026. 
             Register now and take the first step towards turning your idea into reality.
           </p>
           <a 
-            href="mailto:cdc@iitram.ac.in?subject=Pitch Your Idea Registration - IAC 2026" 
+            href="mailto:cdc@iitram.ac.in?subject=Pitch Your Idea Registration - Udgam 2026" 
             className="cta-button"
           >
             Register Your Idea

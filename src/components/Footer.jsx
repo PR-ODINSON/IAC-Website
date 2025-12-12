@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-brand">
-            <h3>IAC 2026</h3>
+            <h3>Udgam 2026</h3>
             <p>Career Development Centre (CDC), IITRAM</p>
             <p className="footer-tagline">Bridging Innovation and Industry</p>
           </div>
@@ -40,7 +40,6 @@ const Footer = () => {
             <h4>Event Details</h4>
             <p>23–24 January 2026</p>
             <p>IITRAM, Ahmedabad</p>
-            <p className="footer-note">250+ Students Expected</p>
           </div>
         </div>
 

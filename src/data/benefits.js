@@ -33,28 +33,28 @@ export const studentBenefits = [
 
 export const companyBenefits = [
   {
-    title: "Talent Access",
-    description: "Direct interaction with motivated engineering students for internships and recruitment.",
-    icon: "target"
-  },
-  {
     title: "Brand Visibility",
-    description: "Promotion through event banners, posters, and official digital platforms.",
+    description: "Promotion via event banners, posters, and CDC's official digital platforms.",
     icon: "eye"
   },
   {
     title: "CSR & Outreach",
-    description: "Contribute to academic–industry skill-building initiatives.",
+    description: "Opportunity to contribute to academic–industry skill building and innovation initiatives.",
     icon: "heart"
   },
   {
     title: "Startup Collaboration",
-    description: "Discover early-stage student innovations for potential funding or mentorship.",
+    description: "Platform to identify early-stage innovations and student-led ideas for funding or mentorship.",
     icon: "lightbulb"
   },
   {
     title: "Networking",
-    description: "Connect with government agencies and industrial collaborators like GIFT City, MSME, iCreate, and others.",
+    description: "Exposure to government agencies (MSME, iCreate, GIFT City) and other industrial collaborators.",
     icon: "link"
+  },
+  {
+    title: "Talent Access",
+    description: "Direct interaction with a pool of trained, motivated engineering students for internships and recruitment.",
+    icon: "target"
   }
 ];

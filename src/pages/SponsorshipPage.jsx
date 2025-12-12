@@ -1,19 +1,19 @@
 import CompanyBenefits from '../components/CompanyBenefits';
 import StallsAndSponsors from '../components/StallsAndSponsors';
 import usePageTitle from '../hooks/usePageTitle';
-import './PartnersPage.css';
+import './SponsorshipPage.css';
 
-const PartnersPage = () => {
-  usePageTitle('Partner With Us');
+const SponsorshipPage = () => {
+  usePageTitle('Sponsorship');
   
   return (
-    <div className="partners-page">
+    <div className="sponsorship-page">
       <div className="page-hero">
         <div className="page-hero-container">
-          <h1 className="page-hero-title">Partner With Us</h1>
+          <h1 className="page-hero-title">Sponsorship</h1>
           <p className="page-hero-description">
-            Connect with 250+ talented engineering students, enhance brand visibility, and contribute 
-            to building the future workforce through various partnership opportunities.
+            Connect with talented engineering students, enhance brand visibility, and contribute 
+            to building the future workforce through various sponsorship opportunities.
           </p>
         </div>
       </div>
@@ -22,8 +22,8 @@ const PartnersPage = () => {
       
       <section className="partnership-cta">
         <div className="partnership-container">
-          <h2>Become a Partner</h2>
-          <p>Explore customized packages and maximize your brand's impact at IAC 2026.</p>
+          <h2>Become a Sponsor</h2>
+          <p>Explore customized packages and maximize your brand's impact at Udgam 2026.</p>
           <a href="/contact" className="cta-button">Enquire About Sponsorship</a>
         </div>
       </section>
@@ -31,4 +31,4 @@ const PartnersPage = () => {
   );
 };
 
-export default PartnersPage;
+export default SponsorshipPage;

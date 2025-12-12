@@ -35,8 +35,8 @@ const CompanyBenefits = () => {
     <section id="companies" className="company-benefits">
       <div className="company-container">
         <div className="company-header">
-          <div className="section-label">For Companies & Industry</div>
-          <h2 className="section-title">Why Partner With Us</h2>
+          <div className="section-label">Company & Industry Benefits</div>
+          <h2 className="section-title">Value Proposition for Companies</h2>
           <p className="section-description">
             Connect with talented engineering students, enhance your brand visibility, 
             and contribute to building the future workforce.

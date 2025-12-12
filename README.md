@@ -719,8 +719,10 @@ This website is designed to:
 - Consistent spacing system (multiples of 4px and 8px)
 - Mobile-first responsive design
 - CSS transitions for smooth interactions
-- Custom color palette:
-  - Primary Blue: `#2563eb`
+- Custom color palette (IITRAM brand colors):
+  - Primary Teal: `#14b8a6`
+  - Light Teal: `#2dd4bf`
+  - Dark Teal: `#0d9488`
   - Dark Navy: `#0f172a`
   - Light backgrounds: `#f8fafc`, `#f1f5f9`
   - Text colors: Slate color scale

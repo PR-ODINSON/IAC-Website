@@ -43,12 +43,12 @@
 }
 
 .day-tab-active {
-  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
-  border-color: #2563eb;
+  background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%);
+  border-color: #14b8a6;
 }
 
 .day-tab-active:hover {
-  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+  background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
 }
 
 .tab-day {
@@ -124,11 +124,11 @@
   font-family: 'Sora', sans-serif;
   font-size: 15px;
   font-weight: 600;
-  color: #2563eb;
+  color: #14b8a6;
   background: white;
   padding: 8px 16px;
   border-radius: 6px;
-  border: 1px solid rgba(37, 99, 235, 0.15);
+  border: 1px solid rgba(20, 184, 166, 0.15);
   display: inline-block;
 }
 
@@ -143,10 +143,10 @@
   top: 8px;
   width: 12px;
   height: 12px;
-  background: #2563eb;
+  background: #14b8a6;
   border-radius: 50%;
   border: 3px solid #f8fafc;
-  box-shadow: 0 0 0 2px #2563eb;
+  box-shadow: 0 0 0 2px #14b8a6;
 }
 
 .session-item:not(:last-child) .session-connector::after {
@@ -231,3 +231,5 @@
     font-size: 14px;
   }
 }
+
+

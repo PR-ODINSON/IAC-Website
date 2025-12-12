@@ -25,8 +25,8 @@
 .hero-badge {
   display: inline-block;
   background: white;
-  border: 1px solid rgba(37, 99, 235, 0.15);
-  color: #2563eb;
+  border: 1px solid rgba(20, 184, 166, 0.15);
+  color: #14b8a6;
   font-size: 13px;
   font-weight: 600;
   padding: 8px 16px;
@@ -47,7 +47,7 @@
 
 .hero-year {
   display: block;
-  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -88,7 +88,7 @@
 .meta-icon {
   width: 20px;
   height: 20px;
-  color: #2563eb;
+  color: #14b8a6;
 }
 
 .hero-actions {
@@ -111,16 +111,16 @@
 }
 
 .btn-primary {
-  background: #2563eb;
-  border: 2px solid #2563eb;
+  background: #14b8a6;
+  border: 2px solid #14b8a6;
   color: white;
 }
 
 .btn-primary:hover {
-  background: #1d4ed8;
-  border-color: #1d4ed8;
+  background: #0d9488;
+  border-color: #0d9488;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 8px 20px rgba(20, 184, 166, 0.25);
 }
 
 .btn-secondary {
@@ -153,11 +153,11 @@
 .stat-card:hover {
   transform: translateX(4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  border-color: rgba(37, 99, 235, 0.2);
+  border-color: rgba(20, 184, 166, 0.2);
 }
 
 .stat-card-highlight {
-  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%);
   border: none;
   color: white;
 }
@@ -201,7 +201,7 @@
   right: -200px;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -262,3 +262,5 @@
     font-size: 36px;
   }
 }
+
+

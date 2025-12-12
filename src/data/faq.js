@@ -2,12 +2,12 @@ export const faqData = [
   {
     id: 1,
     question: "Who can attend the Industry–Academia Conclave 2026?",
-    answer: "IAC 2026 is open to all engineering students from colleges across Gujarat. We welcome students from all years and branches who are interested in industry exposure, innovation, and career development."
+    answer: "Udgam 2026 is open to all engineering students from colleges across Gujarat. We welcome students from all years and branches who are interested in industry exposure, innovation, and career development."
   },
   {
     id: 2,
     question: "Is there any registration fee for students?",
-    answer: "No, participation in IAC 2026 is completely FREE for all students. However, registration is mandatory and seats are limited to 250 participants on a first-come, first-served basis."
+    answer: "No, participation in Udgam 2026 is completely FREE for all students. However, registration is mandatory and seats are limited on a first-come, first-served basis."
   },
   {
     id: 3,
@@ -17,7 +17,7 @@ export const faqData = [
   {
     id: 4,
     question: "Can non-IITRAM students participate?",
-    answer: "Absolutely! IAC 2026 is designed as a multi-college event. We encourage students from all engineering colleges across Gujarat to participate and benefit from this platform."
+    answer: "Absolutely! Udgam 2026 welcomes students from all engineering colleges across Gujarat. We encourage participation from diverse institutions to benefit from this platform."
   },
   {
     id: 5,
@@ -36,7 +36,7 @@ export const faqData = [
   },
   {
     id: 8,
-    question: "How do I register for IAC 2026?",
+    question: "How do I register for Udgam 2026?",
     answer: "Registration will open soon. You can register by visiting our Contact page and filling out the registration form, or by emailing your details to cdc@iitram.ac.in. Follow our official communication channels for registration updates."
   }
 ];

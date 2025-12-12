@@ -45,7 +45,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
+  background: linear-gradient(90deg, #14b8a6 0%, #2dd4bf 100%);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
@@ -58,24 +58,24 @@
 .highlight-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
-  border-color: rgba(37, 99, 235, 0.15);
+  border-color: rgba(20, 184, 166, 0.15);
 }
 
 .highlight-icon {
   width: 48px;
   height: 48px;
-  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #2563eb;
+  color: #14b8a6;
   margin-bottom: 20px;
   transition: all 0.3s ease;
 }
 
 .highlight-card:hover .highlight-icon {
-  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%);
   color: white;
   transform: scale(1.05);
 }
@@ -128,3 +128,5 @@
     padding: 24px;
   }
 }
+
+

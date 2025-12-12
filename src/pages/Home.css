@@ -44,15 +44,15 @@
 
 .quick-link-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.15);
-  border-color: #2563eb;
+  box-shadow: 0 12px 32px rgba(20, 184, 166, 0.15);
+  border-color: #14b8a6;
   background: white;
 }
 
 .quick-link-icon {
   width: 56px;
   height: 56px;
-  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -109,3 +109,5 @@
     grid-template-columns: 1fr;
   }
 }
+
+

@@ -15,7 +15,9 @@ const SchedulePage = () => {
           </p>
         </div>
       </div>
-      <Schedule />
+      <div style={{ padding: '80px 20px', textAlign: 'center', fontSize: '24px', fontWeight: '600', color: '#14b8a6' }}>
+        Will be announced soon!
+      </div>
     </div>
   );
 };

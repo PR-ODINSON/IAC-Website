@@ -13,9 +13,9 @@
 
 .pitch-badge {
   display: inline-block;
-  background: rgba(37, 99, 235, 0.2);
-  border: 1px solid rgba(37, 99, 235, 0.4);
-  color: #60a5fa;
+  background: rgba(20, 184, 166, 0.2);
+  border: 1px solid rgba(20, 184, 166, 0.4);
+  color: #5eead4;
   padding: 8px 20px;
   border-radius: 20px;
   font-size: 0.875rem;
@@ -61,19 +61,19 @@
 .pitch-cta-primary {
   display: inline-block;
   padding: 16px 40px;
-  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%);
   color: white;
   border-radius: 12px;
   font-weight: 600;
   font-size: 1.125rem;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 4px 20px rgba(20, 184, 166, 0.3);
 }
 
 .pitch-cta-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 8px 30px rgba(20, 184, 166, 0.4);
 }
 
 .pitch-cta-secondary {
@@ -106,8 +106,8 @@
 
 .section-label {
   display: inline-block;
-  background: rgba(37, 99, 235, 0.1);
-  color: #2563eb;
+  background: rgba(20, 184, 166, 0.1);
+  color: #14b8a6;
   padding: 6px 16px;
   border-radius: 20px;
   font-size: 0.875rem;
@@ -171,7 +171,7 @@
 }
 
 .round-card-final {
-  border-color: rgba(37, 99, 235, 0.2);
+  border-color: rgba(20, 184, 166, 0.2);
   background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
 }
 
@@ -191,7 +191,7 @@
 }
 
 .round-badge-final {
-  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%);
 }
 
 .round-title {
@@ -239,7 +239,7 @@
   content: "→";
   position: absolute;
   left: 0;
-  color: #2563eb;
+  color: #14b8a6;
   font-weight: 700;
 }
 
@@ -252,8 +252,8 @@
   display: flex;
   gap: 16px;
   align-items: start;
-  background: rgba(37, 99, 235, 0.05);
-  border-left: 4px solid #2563eb;
+  background: rgba(20, 184, 166, 0.05);
+  border-left: 4px solid #14b8a6;
   padding: 16px;
   border-radius: 8px;
   margin-top: 24px;
@@ -262,7 +262,7 @@
 .outcome-icon {
   width: 24px;
   height: 24px;
-  color: #2563eb;
+  color: #14b8a6;
   flex-shrink: 0;
   stroke-width: 2.5;
 }
@@ -321,14 +321,14 @@
 .eligibility-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  border-color: rgba(37, 99, 235, 0.2);
+  border-color: rgba(20, 184, 166, 0.2);
 }
 
 .eligibility-icon {
   width: 48px;
   height: 48px;
   margin: 0 auto 20px;
-  color: #2563eb;
+  color: #14b8a6;
   stroke-width: 1.5;
 }
 
@@ -348,7 +348,7 @@
 
 .eligibility-rules {
   background: white;
-  border: 1px solid rgba(37, 99, 235, 0.2);
+  border: 1px solid rgba(20, 184, 166, 0.2);
   border-radius: 12px;
   padding: 32px;
 }
@@ -383,7 +383,7 @@
   content: "✓";
   position: absolute;
   left: 0;
-  color: #2563eb;
+  color: #14b8a6;
   font-weight: 700;
   font-size: 1.25rem;
 }
@@ -395,8 +395,8 @@
 }
 
 .pitch-evaluation .section-label {
-  background: rgba(37, 99, 235, 0.3);
-  color: #60a5fa;
+  background: rgba(20, 184, 166, 0.3);
+  color: #5eead4;
 }
 
 .pitch-evaluation .section-title {
@@ -427,14 +427,14 @@
 
 .criterion-card:hover {
   background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(37, 99, 235, 0.4);
+  border-color: rgba(20, 184, 166, 0.4);
   transform: translateY(-4px);
 }
 
 .criterion-number {
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -485,8 +485,8 @@
 }
 
 .deliverable-card-final {
-  border-color: rgba(37, 99, 235, 0.3);
-  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-color: rgba(20, 184, 166, 0.3);
+  background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
 }
 
 .deliverable-title {
@@ -512,8 +512,8 @@
 }
 
 .deliverable-round-final {
-  color: #2563eb;
-  background: rgba(37, 99, 235, 0.15);
+  color: #14b8a6;
+  background: rgba(20, 184, 166, 0.15);
 }
 
 .deliverable-list {
@@ -538,15 +538,15 @@
 .list-icon {
   width: 20px;
   height: 20px;
-  color: #2563eb;
+  color: #14b8a6;
   flex-shrink: 0;
   stroke-width: 2.5;
   margin-top: 2px;
 }
 
 .deliverables-note {
-  background: rgba(37, 99, 235, 0.05);
-  border-left: 4px solid #2563eb;
+  background: rgba(20, 184, 166, 0.05);
+  border-left: 4px solid #14b8a6;
   padding: 20px 24px;
   border-radius: 8px;
   color: #475569;
@@ -597,9 +597,9 @@
 }
 
 .timeline-item-highlight .timeline-marker {
-  border-color: #2563eb;
-  background: #2563eb;
-  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+  border-color: #14b8a6;
+  background: #14b8a6;
+  box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.1);
 }
 
 .timeline-title {
@@ -611,7 +611,7 @@
 }
 
 .timeline-date {
-  color: #2563eb;
+  color: #14b8a6;
   font-weight: 600;
   margin-bottom: 8px;
 }
@@ -643,15 +643,15 @@
 
 .prize-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.1);
-  border-color: rgba(37, 99, 235, 0.2);
+  box-shadow: 0 12px 40px rgba(20, 184, 166, 0.1);
+  border-color: rgba(20, 184, 166, 0.2);
 }
 
 .prize-icon {
   width: 48px;
   height: 48px;
   margin: 0 auto 20px;
-  color: #2563eb;
+  color: #14b8a6;
   stroke-width: 1.5;
 }
 
@@ -699,15 +699,15 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
+  background: linear-gradient(90deg, #14b8a6 0%, #2dd4bf 100%);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .faq-item:hover {
-  border-color: rgba(37, 99, 235, 0.15);
-  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: rgba(20, 184, 166, 0.15);
+  box-shadow: 0 8px 24px rgba(20, 184, 166, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08);
   transform: translateY(-4px);
 }
 
@@ -716,8 +716,8 @@
 }
 
 .faq-item[open] {
-  border-color: rgba(37, 99, 235, 0.2);
-  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.15), 0 6px 16px rgba(0, 0, 0, 0.1);
+  border-color: rgba(20, 184, 166, 0.2);
+  box-shadow: 0 12px 32px rgba(20, 184, 166, 0.15), 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .faq-item[open]::before {
@@ -741,7 +741,7 @@
 }
 
 .faq-question:hover {
-  color: #2563eb;
+  color: #14b8a6;
   padding-left: 34px;
 }
 
@@ -759,13 +759,13 @@
 }
 
 .faq-question:hover .faq-icon {
-  color: #2563eb;
+  color: #14b8a6;
   transform: scale(1.15);
 }
 
 .faq-item[open] .faq-icon {
   transform: rotate(180deg);
-  color: #2563eb;
+  color: #14b8a6;
 }
 
 .faq-answer {
@@ -807,7 +807,7 @@
 
 /* Final CTA Section */
 .pitch-cta-section {
-  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
   padding: 100px 20px;
   text-align: center;
   color: white;
@@ -836,7 +836,7 @@
   display: inline-block;
   padding: 18px 48px;
   background: white;
-  color: #2563eb;
+  color: #14b8a6;
   border-radius: 12px;
   font-weight: 600;
   font-size: 1.125rem;
@@ -969,3 +969,5 @@
     height: 24px;
   }
 }
+
+

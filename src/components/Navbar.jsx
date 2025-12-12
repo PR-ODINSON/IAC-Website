@@ -24,8 +24,10 @@ const Navbar = () => {
   const navLinks = [
     { label: 'Home', path: '/' },
     { label: 'Schedule', path: '/schedule' },
+    { label: 'Speakers', path: '/speakers' },
     { label: 'For Students', path: '/students' },
-    { label: 'Partners', path: '/partners' },
+    { label: 'For Companies', path: '/companies' },
+    { label: 'Sponsorship', path: '/sponsorship' },
     { label: 'Pitch Your Idea', path: '/pitch-your-idea' },
     { label: 'Contact', path: '/contact' }
   ];
@@ -34,35 +36,44 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-container">
         <Link to="/" className="navbar-brand">
-          <span className="brand-main">IAC 2026</span>
+          <span className="brand-main">Udgam 2026</span>
           <span className="brand-sub">CDC – IITRAM</span>
         </Link>
 
         <button 
-          className="mobile-menu-toggle"
+          className="hamburger-menu"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span className={mobileMenuOpen ? 'active' : ''}></span>
+          <span className={mobileMenuOpen ? 'active' : ''}></span>
+          <span className={mobileMenuOpen ? 'active' : ''}></span>
         </button>
+      </div>
 
-        <div className={`navbar-links ${mobileMenuOpen ? 'mobile-menu-open' : ''}`}>
+      <div className={`sidebar-menu ${mobileMenuOpen ? 'sidebar-open' : ''}`}>
+        <div className="sidebar-content">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
-              className={`nav-link ${location.pathname === link.path ? 'nav-link-active' : ''}`}
+              className={`sidebar-link ${location.pathname === link.path ? 'sidebar-link-active' : ''}`}
             >
               {link.label}
             </Link>
           ))}
-          <Link to="/contact" className="nav-cta">
+          <Link to="/contact" className="sidebar-cta">
             Register Interest
           </Link>
         </div>
       </div>
+      
+      {mobileMenuOpen && (
+        <div 
+          className="sidebar-overlay" 
+          onClick={() => setMobileMenuOpen(false)}
+        />
+      )}
     </nav>
   );
 };

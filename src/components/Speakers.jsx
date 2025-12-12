@@ -14,31 +14,8 @@ const Speakers = () => {
           </p>
         </div>
 
-        <div className="speakers-grid">
-          {speakers.map((speaker) => (
-            <div key={speaker.id} className="speaker-card">
-              <div className="speaker-session-badge">
-                {speaker.sessionType}
-              </div>
-              <div className="speaker-info">
-                <h3 className="speaker-name">{speaker.name}</h3>
-                <p className="speaker-title">{speaker.title}</p>
-                <p className="speaker-org">{speaker.organisation}</p>
-              </div>
-              <div className="speaker-details">
-                <div className="speaker-topic">
-                  <svg className="topic-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-                  </svg>
-                  <span>{speaker.topic}</span>
-                </div>
-                <div className="speaker-schedule">
-                  <span className="schedule-day">{speaker.day}</span>
-                  {speaker.time && <span className="schedule-time">{speaker.time}</span>}
-                </div>
-              </div>
-            </div>
-          ))}
+        <div style={{ padding: '60px 20px', textAlign: 'center', fontSize: '24px', fontWeight: '600', color: '#14b8a6' }}>
+          Will be announced soon!
         </div>
       </div>
     </section>

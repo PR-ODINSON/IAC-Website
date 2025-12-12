@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 const usePageTitle = (title) => {
   useEffect(() => {
     const prevTitle = document.title;
-    document.title = title ? `${title} | IAC 2026` : 'IAC 2026 - Industry–Academia Conclave | CDC IITRAM';
+    document.title = title ? `${title} | Udgam 2026` : 'Udgam 2026 - Industry–Academia Conclave | CDC IITRAM';
     
     return () => {
       document.title = prevTitle;
@@ -17,7 +17,7 @@ export const useAutoPageTitle = () => {
   
   useEffect(() => {
     const titles = {
-      '/': 'IAC 2026 - Industry–Academia Conclave | CDC IITRAM',
+      '/': 'Udgam 2026 - Industry–Academia Conclave | CDC IITRAM',
       '/schedule': 'Event Schedule',
       '/students': 'For Students',
       '/partners': 'Partners & Sponsors',

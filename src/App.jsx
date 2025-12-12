@@ -3,8 +3,10 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import SchedulePage from './pages/SchedulePage';
+import SpeakersPage from './pages/SpeakersPage';
 import StudentsPage from './pages/StudentsPage';
-import PartnersPage from './pages/PartnersPage';
+import CompaniesPage from './pages/CompaniesPage';
+import SponsorshipPage from './pages/SponsorshipPage';
 import PitchYourIdea from './pages/PitchYourIdea';
 import ContactPage from './pages/ContactPage';
 import NotFound from './pages/NotFound';
@@ -18,8 +20,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/schedule" element={<SchedulePage />} />
+          <Route path="/speakers" element={<SpeakersPage />} />
           <Route path="/students" element={<StudentsPage />} />
-          <Route path="/partners" element={<PartnersPage />} />
+          <Route path="/companies" element={<CompaniesPage />} />
+          <Route path="/sponsorship" element={<SponsorshipPage />} />
           <Route path="/pitch-your-idea" element={<PitchYourIdea />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NotFound />} />

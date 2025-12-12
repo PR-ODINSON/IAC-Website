@@ -11,7 +11,7 @@ const ContactPage = () => {
         <div className="page-hero-container">
           <h1 className="page-hero-title">Contact Us</h1>
           <p className="page-hero-description">
-            Have questions about IAC 2026? Interested in partnerships or participation? 
+            Have questions about Udgam 2026? Interested in partnerships or participation? 
             We'd love to hear from you.
           </p>
         </div>

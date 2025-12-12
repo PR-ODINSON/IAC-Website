@@ -23,7 +23,7 @@ const FAQ = () => {
           <div className="section-label">Got Questions?</div>
           <h2 className="section-title">Frequently Asked Questions</h2>
           <p className="section-description">
-            Find answers to common questions about IAC 2026. Can't find what you're looking for? 
+            Find answers to common questions about Udgam 2026. Can't find what you're looking for? 
             Feel free to contact us directly.
           </p>
         </div>

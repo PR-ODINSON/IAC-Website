@@ -1,8 +1,42 @@
 /* Shared styles are in SchedulePage.css */
 
+.sponsorship-page {
+  min-height: 100vh;
+  padding-top: 80px;
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+}
+
+.page-hero {
+  background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 4rem;
+}
+
+.page-hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.page-hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.95;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .partnership-cta {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
 }
 
 .partnership-container {
@@ -29,7 +63,7 @@
   display: inline-block;
   padding: 16px 48px;
   background: white;
-  color: #2563eb;
+  color: #14b8a6;
   border-radius: 12px;
   font-weight: 600;
   font-size: 1.125rem;
@@ -61,3 +95,5 @@
     font-size: 1rem;
   }
 }
+
+

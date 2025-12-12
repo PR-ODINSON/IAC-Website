@@ -12,7 +12,7 @@ const Hero = () => {
           </div>
           
           <h1 className="hero-title">
-            Industry–Academia Conclave
+            Udgam
             <span className="hero-year">2026</span>
           </h1>
           
@@ -62,9 +62,9 @@ const Hero = () => {
           </div>
           
           <div className="stat-card">
-            <div className="stat-number">250+</div>
-            <div className="stat-label">Students Expected</div>
-            <div className="stat-detail">Multi-College Participation</div>
+            <div className="stat-number">15+</div>
+            <div className="stat-label">Industry Speakers</div>
+            <div className="stat-detail">Experts · Mentors · Innovators</div>
           </div>
           
           <div className="stat-card stat-card-highlight">

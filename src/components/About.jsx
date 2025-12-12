@@ -13,7 +13,7 @@ const About = () => {
       <div className="about-container">
         <div className="about-header">
           <div className="section-label">About the Event</div>
-          <h2 className="section-title">IAC 2026</h2>
+          <h2 className="section-title">Udgam 2026</h2>
         </div>
 
         <div className="about-content">
@@ -26,7 +26,7 @@ const About = () => {
             
             <p className="about-description">
               Our vision is to bridge the critical skill gap between classroom learning and 
-              real-world industry practices. Through IAC 2026, we're creating a platform that 
+              real-world industry practices. Through Udgam 2026, we're creating a platform that 
               focuses on innovation, entrepreneurship, employability, and meaningful collaboration 
               across sectors.
             </p>

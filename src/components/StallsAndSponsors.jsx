@@ -11,7 +11,7 @@ const StallsAndSponsors = () => {
           <h2 className="section-title">Stalls & Sponsorship</h2>
           <p className="section-description">
             Multiple engagement options for companies to connect with students and 
-            showcase their brand at IAC 2026.
+            showcase their brand at Udgam 2026.
           </p>
         </div>
 
@@ -55,7 +55,7 @@ const StallsAndSponsors = () => {
           <h3 className="subsection-title">Sponsorship Packages</h3>
           <p className="subsection-description">
             Comprehensive sponsorship tiers offering brand visibility, speaking opportunities, 
-            and exclusive access to IAC 2026.
+            and exclusive access to Udgam 2026.
           </p>
           
           <div className="sponsors-grid">
