@@ -1,0 +1,747 @@
+================================================================================
+UDGAM 2026 - INDUSTRY-ACADEMIA CONCLAVE (IAC)
+WEBSITE PAGES & CONTENT DOCUMENTATION
+Career Development Centre (CDC), IITRAM
+================================================================================
+
+================================================================================
+NAVIGATION & STRUCTURE
+================================================================================
+
+Main Navigation Links (in Navbar):
+1. Home
+2. Schedule
+3. Speakers
+4. For Students
+5. For Companies
+6. Sponsorship
+7. Pitch Your Idea
+8. Contact
+
+Register Interest Button (Dropdown):
+- Student Passes (Need passes for your college students)
+  Form Link: https://forms.gle/SoAjwWNzQzCJWLgs6
+- Stall Booking (For companies to book exhibition stalls)
+  Form Link: https://forms.gle/C21fHj3MmK71Q8tU8
+- Sponsorship Interest (For companies interested in sponsorship packages)
+  Form Link: https://forms.gle/dFqcnHw2EYxTnTXm8
+
+================================================================================
+PAGE 1: HOME PAGE
+================================================================================
+
+HERO SECTION:
+-------------
+Badge: Flagship Event by CDC, IITRAM
+
+Title: Udgam 2026
+
+Subtitle: Bridging Innovation and Industry
+
+Description: CDC IITRAM's flagship initiative connecting students, academia, and industry through thought-provoking keynotes and panel discussions. Join us for two days of innovation, networking, and career opportunities.
+
+Event Details:
+- Date: 20–21 February 2026
+- Location: IITRAM, Ahmedabad
+
+Statistics Cards:
+1. "2 Days of Innovation"
+   Detail: Keynotes · Panels · Discussions
+
+2. "15+ Industry Speakers"
+   Detail: Experts · Mentors · Innovators
+
+3. "∞ Opportunities"
+   Detail: Industry Leaders · Startups · Innovation Hubs
+
+Buttons:
+- Register Now (links to /contact)
+- Download Brochure
+
+---
+
+ABOUT SECTION:
+--------------
+Title: Udgam 2026
+
+Intro: The Industry–Academia Conclave (IAC) 2026 is the flagship initiative by the Career Development Centre (CDC), IITRAM, designed to create meaningful connections between students, academia, and industry.
+
+Description: Our vision is to bridge the critical skill gap between classroom learning and real-world industry practices. Through Udgam 2026, we're creating a platform that focuses on innovation, entrepreneurship, employability, and meaningful collaboration across sectors.
+
+This two-day conclave brings together industry leaders, startup founders, students, and faculty to explore emerging trends, share insights, and build partnerships that drive innovation forward.
+
+Core Objectives:
+01. Facilitate industry exposure through keynotes and panel discussions
+02. Create networking opportunities with industry leaders, HRs, and startup founders
+03. Encourage student innovation via idea pitches and project showcases
+04. Enable collaborations with ecosystems like GIFT City, MSME, iCreate, and more
+
+---
+
+EVENT HIGHLIGHTS:
+-----------------
+Section: What to Expect
+
+Title: Event Highlights
+
+Description: Two days packed with insights, innovation, and opportunities to connect with industry leaders and fellow innovators.
+
+Highlights:
+1. Keynote Talks
+   - Expert insights on Innovation & Industry 4.0 from leading professionals
+
+2. Panel Discussions
+   - Deep dives into Smart Cities, Entrepreneurship, and Future Tech
+
+3. Pitch Your Idea
+   - Startup competition for students to present to investors
+
+4. Student Project Expo
+   - Showcase innovative projects and gain recognition
+
+5. Corporate Stalls
+   - Interactive networking zones with top companies
+
+6. Cultural Evening
+   - Networking mixer with performances and entertainment
+
+---
+
+EXPLORE UDGAM 2026 SECTION:
+---------------------------
+Section Label: Navigate
+
+Title: Explore Udgam 2026
+
+Description: Discover everything about the event — from schedules and speakers to participation opportunities and sponsorship details.
+
+Quick Links (6 Cards):
+1. View Schedule
+   - Two-day program details
+   Link: /schedule
+
+2. For Students
+   - Benefits and opportunities
+   Link: /students
+
+3. For Companies
+   - Partnership opportunities
+   Link: /companies
+
+4. Sponsorship
+   - Sponsorship packages
+   Link: /sponsorship
+
+5. Pitch Your Idea
+   - Innovation competition
+   Link: /pitch-your-idea
+
+6. Contact Us
+   - Get in touch
+   Link: /contact
+
+---
+
+FAQ SECTION:
+------------
+Section: Got Questions?
+
+Title: Frequently Asked Questions
+
+Description: Find answers to common questions about Udgam 2026. Can't find what you're looking for? Feel free to contact us directly.
+
+FAQs:
+1. Who can attend the Industry–Academia Conclave 2026?
+   Answer: Udgam 2026 is open to all engineering students from colleges across Gujarat. We welcome students from all years and branches who are interested in industry exposure, innovation, and career development.
+
+2. Is there any registration fee for students?
+   Answer: No, participation in Udgam 2026 is completely FREE for all students. However, registration is mandatory and seats are limited on a first-come, first-served basis.
+
+3. Will certificates be provided to participants?
+   Answer: Yes, all registered participants who attend both days of the event will receive an official participation certificate from CDC, IITRAM. Winners of 'Pitch Your Idea' competition and selected project expo participants will receive special recognition certificates.
+
+4. Can non-IITRAM students participate?
+   Answer: Absolutely! Udgam 2026 welcomes students from all engineering colleges across Gujarat. We encourage participation from diverse institutions to benefit from this platform.
+
+5. What should I bring to the event?
+   Answer: Bring your student ID card, a notebook for taking notes, and business cards if you have them (for networking). For 'Pitch Your Idea' participants, bring any presentation materials or prototypes you may need.
+
+6. How can companies participate or sponsor the event?
+   Answer: Companies can participate through various sponsorship packages (Platinum, Gold, Silver) or book corporate stalls. Please visit our Partners page for detailed packages or contact us directly at cdc@iitram.ac.in for custom partnership opportunities.
+
+7. Can I participate in the 'Pitch Your Idea' competition?
+   Answer: Yes! Students with innovative ideas or early-stage startups can register for the pitch competition. Round 1 will be on Day 1 (23 Jan), and finalists will present on Day 2 (24 Jan) in front of investors and startup founders.
+
+8. How do I register for Udgam 2026?
+   Answer: Registration will open soon. You can register by visiting our Contact page and filling out the registration form, or by emailing your details to cdc@iitram.ac.in. Follow our official communication channels for registration updates.
+
+
+================================================================================
+PAGE 2: SCHEDULE PAGE
+================================================================================
+
+Page Title: Event Schedule
+
+Page Hero Description: Detailed two-day program featuring keynotes, panel discussions, and networking opportunities.
+
+Content: Will be announced soon!
+
+
+================================================================================
+PAGE 3: SPEAKERS PAGE
+================================================================================
+
+Page Title: Speakers & Guests
+
+Page Hero Description: Learn from industry leaders, academics, and entrepreneurs who are shaping the future of innovation and technology.
+
+Content: Will be announced soon!
+
+
+================================================================================
+PAGE 4: FOR STUDENTS PAGE
+================================================================================
+
+Page Title: For Students
+
+Page Hero Description: Discover the benefits of attending Udgam 2026 — from industry exposure and skill development to networking with leaders and showcasing your innovations.
+
+---
+
+STUDENTS BENEFITS SECTION:
+--------------------------
+Section Label: For Students
+
+Title: Why You Should Attend
+
+Description: Gain industry exposure, develop in-demand skills, and build connections that will shape your career trajectory.
+
+Benefits:
+1. Industry Exposure
+   - Learn about real-world projects, upcoming technologies, and job-ready skills straight from professionals.
+
+2. Skill Development
+   - Learn from industry experts about cutting-edge technologies in AI, EV, Mechatronics, Smart Infrastructure, and more.
+
+3. Career Guidance
+   - Panels and HR interactions on hiring processes, internships, and startup careers.
+
+4. Networking
+   - Build connections with top companies, entrepreneurs, and innovation hubs like GIFT City, MSME, and iCreate.
+
+5. Recognition & Incentives
+   - Certificates, prizes for best ideas, and visibility for selected projects.
+
+6. Entrepreneurship Insight
+   - Pitch Your Idea gives a platform to present to investors and startup founders.
+
+---
+
+INVITE-ONLY PARTICIPATION SECTION:
+----------------------------------
+Badge: Exclusive Event
+
+Title: Invite-Only Participation
+
+Description: Udgam 2026 is an exclusive, invite-only event. CDC IITRAM will distribute a limited number of participation passes to select engineering colleges across Gujarat. Students can only attend with these official passes — no on-spot registration will be available.
+
+Key Features:
+- 100% Free — No registration fees
+- Invite-Only — Passes sent to select colleges
+- No Walk-ins — Entry only with official pass
+- Exclusive Access — Limited participation
+
+---
+
+REGISTRATION CTA SECTION:
+-------------------------
+Title: Want Passes for Your College?
+
+Description: If you'd like CDC IITRAM to send participation passes to your college, express your interest below. We'll share the registration form soon.
+
+Button: Express Interest
+Link: https://forms.gle/SoAjwWNzQzCJWLgs6
+
+
+================================================================================
+PAGE 5: FOR COMPANIES PAGE
+================================================================================
+
+Page Title: For Companies
+
+Page Hero Description: Connect with talented engineering students, enhance brand visibility, and contribute to building the future workforce through strategic partnerships at Udgam 2026.
+
+---
+
+COMPANY BENEFITS SECTION:
+-------------------------
+Section Label: Company & Industry Benefits
+
+Title: Value Proposition for Companies
+
+Description: Connect with talented engineering students, enhance your brand visibility, and contribute to building the future workforce.
+
+Benefits:
+1. Brand Visibility
+   - Promotion via event banners, posters, and CDC's official digital platforms.
+
+2. CSR & Outreach
+   - Opportunity to contribute to academic–industry skill building and innovation initiatives.
+
+3. Startup Collaboration
+   - Platform to identify early-stage innovations and student-led ideas for funding or mentorship.
+
+4. Networking
+   - Exposure to government agencies (MSME, iCreate, GIFT City) and other industrial collaborators.
+
+5. Talent Access
+   - Direct interaction with a pool of trained, motivated engineering students for internships and recruitment.
+
+---
+
+CORPORATE STALLS SECTION:
+-------------------------
+Section: Partnership Opportunities
+
+Title: Corporate Stalls
+
+Description: Set up your company stall and interact directly with students, showcase products, and conduct on-spot activities.
+
+Stall Packages (One Day):
+
+1. Small Stall - ₹799 (One Day)
+   Features:
+   - 1 desk space
+   - Company banner slot
+   - Basic promotional materials
+
+2. Large Stall - ₹999 (One Day)
+   Features:
+   - 1 desk space
+   - Standee placement
+   - Brochure distribution space
+   - Enhanced visibility
+
+3. Premium Stall - ₹1,299 (One Day) [POPULAR]
+   Features:
+   - Larger booth space
+   - 10-minute company talk slot
+   - Standee and banner placement
+   - Priority positioning
+
+---
+
+STALL BOOKING INTEREST SECTION:
+-------------------------------
+Title: Interested in Booking a Stall?
+
+Description: Want to set up a corporate stall at Udgam 2026? Express your interest below and our team will reach out to you with available slots, pricing, and booking details.
+
+Features:
+- Direct interaction with engineering students
+- Showcase products and conduct activities
+- One-day or two-day stall options
+- Prime location at the venue
+
+Button: Express Interest for Stall Booking
+Link: https://forms.gle/C21fHj3MmK71Q8tU8
+
+
+================================================================================
+PAGE 6: SPONSORSHIP PAGE
+================================================================================
+
+Page Title: Sponsorship
+
+Page Hero Description: Elevate your brand presence, engage with future talent, and demonstrate your commitment to fostering innovation and academic excellence through exclusive sponsorship opportunities at Udgam 2026.
+
+---
+
+STALLS & SPONSORSHIP SECTION:
+-----------------------------
+Section: Partnership Opportunities
+
+Title: Stalls & Sponsorship
+
+Description: Multiple engagement options for companies to connect with students and showcase their brand at Udgam 2026.
+
+CORPORATE STALLS (ONE DAY):
+---------------------------
+Description: Set up your company stall and interact directly with students, showcase products, and conduct on-spot activities.
+
+[Same stall packages as Companies page - Small ₹799, Large ₹999, Premium ₹1,299]
+
+---
+
+SPONSORSHIP PACKAGES:
+---------------------
+Description: Comprehensive sponsorship tiers offering brand visibility, speaking opportunities, and exclusive access to Udgam 2026.
+
+Packages:
+
+1. Platinum Sponsor - ₹1,00,000 [HIGHLIGHT]
+   Features:
+   - Logo on main-stage backdrop
+   - Logo on inauguration banner
+   - Logo on website and certificates
+   - 20-minute keynote session
+   - 5 VIP passes
+   - Dedicated appreciation post
+   - Felicitation during closing ceremony
+
+2. Gold Sponsor - ₹75,000
+   Features:
+   - Logo on event banners
+   - Logo on event kits
+   - 10-minute session slot
+   - 3 VIP passes
+   - Brochure inserts in event kit
+   - Certificate of appreciation
+
+3. Silver Sponsor - ₹50,000
+   Features:
+   - Logo on posters
+   - Logo on digital campaigns
+   - Brochure inserts
+   - Stage acknowledgements
+   - Certificate of appreciation
+
+CTA: Ready to Partner?
+Description: Contact us to discuss custom sponsorship packages tailored to your objectives.
+Button: Get in Touch (links to /contact)
+
+
+================================================================================
+PAGE 7: PITCH YOUR IDEA COMPETITION
+================================================================================
+
+Page Title: Pitch Your Idea Competition
+
+Badge: Open to students from engineering colleges across Gujarat
+
+Hero Subtitle: Showcase your innovation, pitch to industry experts, and stand a chance to be among the top finalists at Udgam 2026.
+
+Event Info: Part of Industry–Academia Conclave (IAC) 2026 · CDC, IITRAM
+
+Buttons:
+- Register Your Idea (mailto: cdc@iitram.ac.in)
+- View Evaluation Criteria
+
+---
+
+ABOUT THE COMPETITION:
+---------------------
+Section Label: About the Competition
+
+Title: What is "Pitch Your Idea"?
+
+Content:
+"Pitch Your Idea" is a flagship innovation competition under Udgam 2026, designed to provide students with a platform to showcase their entrepreneurial spirit and technical ingenuity. This competition brings together aspiring innovators and industry professionals in a dynamic environment where ideas meet opportunity.
+
+Participants will present their startup idea, technical solution, or innovation in front of a distinguished jury comprising industry professionals, successful entrepreneurs, and experienced faculty members. The competition emphasizes real-world problem solving, innovation, and the feasibility of implementation.
+
+The focus is on three key aspects: demonstrating a clear understanding of the problem you're solving, presenting an innovative and practical solution, and communicating your vision effectively. The competition spans two rounds across both days of Udgam 2026, giving participants multiple opportunities to refine and present their ideas.
+
+---
+
+COMPETITION STRUCTURE:
+----------------------
+Section Label: Competition Format
+
+Title: Two-Round Structure
+
+ROUND 1 - SHORTLISTING ROUND (Day 1):
+
+Format:
+- 3–5 minute idea pitch covering problem, solution, target users, and impact
+- Optional 1–2 minutes of Q&A, depending on time availability
+- Focus on conveying the core concept clearly and concisely
+
+Objective:
+Get an overview of as many ideas as possible and identify the most promising concepts for deeper evaluation.
+
+Outcome:
+At the end of Round 1, the jury will shortlist 10–15 finalist teams based on predefined criteria.
+
+---
+
+ROUND 2 - FINAL ROUND (Day 2):
+
+Expectations from Finalists:
+- Detailed presentation of the idea (problem, solution, unique selling proposition)
+- If available: demo video, basic prototype, or wireframes/mockups
+- Clear explanation of feasibility, innovation, and potential impact
+- Business/technical model and implementation roadmap
+- Extended Q&A session with the jury
+
+Evaluation:
+Finalists will be evaluated more deeply across all criteria, and winners will be chosen based on their performance in this round.
+
+Note: Finalists will be informed about their selection and time slots for Round 2 at the end of Day 1.
+
+---
+
+ELIGIBILITY & TEAM FORMATION:
+-----------------------------
+Section Label: Who Can Participate
+
+Title: Eligibility & Team Formation
+
+Cards:
+1. Open to All Students
+   - Students from IITRAM and other engineering colleges across Gujarat are welcome.
+
+2. Individual or Team
+   - Participate individually or form teams of up to 3–4 members.
+
+3. Cross-Collaboration Allowed
+   - Inter-college and inter-department teams are encouraged for diverse perspectives.
+
+Additional Rules:
+- One participant can be part of only one team for this competition
+- Ideas can span any domain: tech products, services, social innovations, industrial solutions, startup concepts, etc.
+- All ideas should demonstrate practical applicability and innovation
+
+---
+
+EVALUATION CRITERIA:
+--------------------
+Section Label: How You'll Be Judged
+
+Title: Evaluation Criteria
+
+Intro: Round 1 uses these criteria in a quick, high-level manner, while Round 2 applies them in greater depth with more weightage on each aspect.
+
+Criteria:
+1. Problem Understanding
+   - Clarity in identifying and explaining the real-world problem.
+
+2. Innovation & Creativity
+   - How unique, original, or innovative the solution is.
+
+3. Feasibility & Implementation
+   - Practicality of execution, technical feasibility, and scalability.
+
+4. Impact & Value Proposition
+   - Who benefits, what changes, and how significant the impact could be.
+
+5. Presentation & Communication
+   - Structure of the pitch, clarity of explanation, and ability to answer questions.
+
+---
+
+WHAT YOU NEED TO PREPARE:
+-------------------------
+Section Label: Preparation Guide
+
+Title: What You Need to Prepare
+
+ROUND 1 - Initial Pitch:
+- Short pitch (3–5 minutes)
+- Basic explanation of problem, proposed solution, and target beneficiaries
+- Optional: Basic slide deck (3–5 slides)
+
+ROUND 2 - Final Presentation (Finalists):
+- Refined pitch deck (up to 8–10 slides)
+- If available: Prototype, demo video, or UI mockups/architecture diagrams
+- Detailed implementation approach and business/technical model
+- Roadmap and next steps
+
+Note: Prototypes are encouraged but not mandatory – a strong, well-thought-out idea can still win.
+
+---
+
+TIMELINE & KEY DATES:
+---------------------
+Section Label: Important Dates
+
+Timeline:
+1. Registration Opens - To be announced
+   Online registration portal will be opened for all participants.
+
+2. Registration Deadline - To be announced
+   Last date to register your idea for the competition.
+
+3. Round 1 – Idea Pitches - 20 February 2026 (Day 1 of IAC)
+   All registered participants present their initial pitches.
+
+4. Finalists Announcement - End of Day 1
+   10–15 finalists will be announced with Round 2 time slots.
+
+5. Round 2 – Final Pitches - 21 February 2026 (Day 2 of IAC)
+   Finalists present detailed pitches with demos/prototypes.
+
+6. Winners Announcement - Closing Ceremony – Day 2
+   Winners declared during the Udgam 2026 closing event.
+
+---
+
+PRIZES & RECOGNITION:
+---------------------
+Section Label: What You'll Win
+
+Title: Prizes & Recognition
+
+Prizes:
+1. Certificates
+   - All shortlisted finalists receive participation certificates recognizing their achievement.
+
+2. Trophies & Prizes
+   - Special certificates and trophies for winners (1st, 2nd, and 3rd place).
+
+3. Industry Exposure
+   - Opportunity to discuss ideas with industry experts, mentors, and potential investors.
+
+4. Visibility
+   - Feature in Udgam 2026 communication channels including website, social media, and event materials.
+
+---
+
+FREQUENTLY ASKED QUESTIONS:
+--------------------------
+Section Label: Common Questions
+
+FAQs:
+1. Can I participate if I don't have a prototype yet?
+   Answer: Yes! Prototypes are encouraged but not mandatory. A strong, well-thought-out idea with clear execution plans can still win.
+
+2. Can participants from different colleges form a team?
+   Answer: Yes, inter-college and inter-department teams are allowed. We encourage diverse collaborations.
+
+3. Do we need to submit our slides in advance?
+   Answer: Specific submission guidelines will be shared with registered participants. Generally, Round 1 requires minimal preparation while Round 2 finalists should prepare detailed presentations.
+
+4. What kind of ideas are expected?
+   Answer: We welcome tech-based products, innovative services, solutions to social or industrial problems, and startup concepts across all domains.
+
+5. Is there any registration fee for this competition?
+   Answer: No, there is no registration fee for this competition. It is open to all eligible students free of cost.
+
+---
+
+FINAL CTA:
+----------
+Title: Ready to Pitch Your Idea?
+
+Description: Don't miss this opportunity to showcase your innovation at Udgam 2026. Register now and take the first step towards turning your idea into reality.
+
+Button: Register Your Idea
+Link: mailto:cdc@iitram.ac.in?subject=Pitch Your Idea Registration - Udgam 2026
+
+Contact: For queries related to the competition, reach out to the CDC, IITRAM at cdc@iitram.ac.in
+
+
+================================================================================
+PAGE 8: CONTACT PAGE
+================================================================================
+
+Page Title: Contact Us
+
+Page Hero Description: Have questions about Udgam 2026? Interested in partnerships or participation? We'd love to hear from you.
+
+---
+
+CONTACT SECTION:
+----------------
+Section Label: Get in Touch
+
+Title: Contact & Queries
+
+Description: For partnership, sponsorship, and participation queries, reach out to the Career Development Centre (CDC), IITRAM.
+
+Contact Information:
+
+1. Email Us
+   - cdc@iitram.ac.in
+
+2. Call Us
+   - +91-XXXXXXXXXX
+
+3. Visit Us
+   - IITRAM, Ahmedabad, Gujarat
+
+---
+
+REGISTRATION CTA BOX:
+--------------------
+Title: Register Your Interest
+
+Description: Whether you're a student looking to participate or a company interested in partnering, we'd love to hear from you.
+
+Options:
+- Students: Register for Udgam 2026
+- Companies: Partnership Opportunities
+
+Button: Send Us Your Query
+Link: mailto:cdc@iitram.ac.in?subject=Udgam 2026 Query
+
+Note: Registrations will open soon. Stay tuned for updates!
+
+
+================================================================================
+REGISTRATION FORMS
+================================================================================
+
+1. Student Passes Form:
+   Purpose: For colleges to get participation passes for their students
+   Link: https://forms.gle/SoAjwWNzQzCJWLgs6
+   Location: Students page, Navbar dropdown
+
+2. Stall Booking Form:
+   Purpose: For companies to book exhibition stalls
+   Link: https://forms.gle/C21fHj3MmK71Q8tU8
+   Location: Companies page, Navbar dropdown
+
+3. Sponsorship Interest Form:
+   Purpose: For companies interested in sponsorship packages
+   Link: https://forms.gle/dFqcnHw2EYxTnTXm8
+   Location: Navbar dropdown
+
+
+================================================================================
+KEY INFORMATION SUMMARY
+================================================================================
+
+Event Name: Udgam 2026
+Full Name: Industry–Academia Conclave (IAC) 2026
+Organizer: Career Development Centre (CDC), IITRAM
+Date: 20–21 February 2026
+Location: IITRAM, Ahmedabad, Gujarat
+
+Event Type: Invite-Only (for students)
+Student Registration: 100% Free
+Participation: Limited passes distributed to select engineering colleges
+
+Contact Email: cdc@iitram.ac.in
+Contact Phone: +91-XXXXXXXXXX
+
+Key Features:
+- 2 Days of Innovation
+- 15+ Industry Speakers
+- Keynote Talks & Panel Discussions
+- Pitch Your Idea Competition
+- Student Project Expo
+- Corporate Stalls
+- Cultural Evening
+- Networking Opportunities
+
+Target Audience:
+- Engineering students from colleges across Gujarat
+- Industry leaders and companies
+- Startup founders and investors
+- Innovation hubs (GIFT City, MSME, iCreate)
+
+Technologies/Topics Covered:
+- AI (Artificial Intelligence)
+- EV (Electric Vehicles)
+- Mechatronics
+- Smart Infrastructure
+- Smart Cities
+- Industry 4.0
+- Entrepreneurship
+- Future Tech
+
+
+================================================================================
+END OF DOCUMENTATION
+================================================================================

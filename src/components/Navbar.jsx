@@ -38,8 +38,11 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-container">
         <Link to="/" className="navbar-brand">
-          <span className="brand-main">Udgam 2026</span>
-          <span className="brand-sub">CDC – IITRAM</span>
+          <img src="/logo.png" alt="Udgam 2026" className="navbar-logo" />
+          <div className="brand-text">
+            <span className="brand-main">Udgam 2026</span>
+            <span className="brand-sub">CDC – IITRAM</span>
+          </div>
         </Link>
 
         <div className="navbar-actions">
@@ -100,7 +103,12 @@ const Navbar = () => {
                       <span>For companies to book exhibition stalls</span>
                     </div>
                   </a>
-                  <div className="dropdown-item dropdown-item-disabled">
+                  <a 
+                    href="https://forms.gle/dFqcnHw2EYxTnTXm8" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="dropdown-item"
+                  >
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
                       <path d="M2 17l10 5 10-5"></path>
@@ -108,9 +116,9 @@ const Navbar = () => {
                     </svg>
                     <div>
                       <strong>Sponsorship Interest</strong>
-                      <span>Coming soon</span>
+                      <span>For companies interested in sponsorship packages</span>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div 
                   className="dropdown-overlay" 
@@ -120,13 +128,24 @@ const Navbar = () => {
             )}
           </div>
           <button 
-            className="hamburger-menu"
+            className="menu-toggle"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            <span className={mobileMenuOpen ? 'active' : ''}></span>
-            <span className={mobileMenuOpen ? 'active' : ''}></span>
-            <span className={mobileMenuOpen ? 'active' : ''}></span>
+            <span className="menu-toggle-text">Menu</span>
+            <svg 
+              className={`menu-toggle-icon ${mobileMenuOpen ? 'menu-toggle-icon-open' : ''}`}
+              width="20" 
+              height="20" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
           </button>
         </div>
       </div>

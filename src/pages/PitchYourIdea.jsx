@@ -380,7 +380,7 @@ const PitchYourIdea = () => {
               <div className="timeline-marker"></div>
               <div className="timeline-content">
                 <h3 className="timeline-title">Round 1 – Idea Pitches</h3>
-                <p className="timeline-date">23 January 2026 (Day 1 of IAC)</p>
+                <p className="timeline-date">20 February 2026 (Day 1 of IAC)</p>
                 <p className="timeline-description">All registered participants present their initial pitches.</p>
               </div>
             </div>
@@ -398,7 +398,7 @@ const PitchYourIdea = () => {
               <div className="timeline-marker"></div>
               <div className="timeline-content">
                 <h3 className="timeline-title">Round 2 – Final Pitches</h3>
-                <p className="timeline-date">24 January 2026 (Day 2 of IAC)</p>
+                <p className="timeline-date">21 February 2026 (Day 2 of IAC)</p>
                 <p className="timeline-description">Finalists present detailed pitches with demos/prototypes.</p>
               </div>
             </div>

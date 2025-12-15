@@ -38,6 +38,157 @@
   margin-right: auto;
 }
 
+/* Coming Soon Section */
+.coming-soon-section {
+  padding: 80px 0;
+  background: linear-gradient(to bottom, #f8fafc, white);
+}
+
+.coming-soon-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 32px;
+  text-align: center;
+}
+
+.coming-soon-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 32px;
+  background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming-soon-icon svg {
+  width: 40px;
+  height: 40px;
+  color: #14b8a6;
+}
+
+.coming-soon-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.02em;
+}
+
+.coming-soon-description {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #64748b;
+  margin: 0 0 48px 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coming-soon-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(20, 184, 166, 0.1);
+  border-color: rgba(20, 184, 166, 0.2);
+}
+
+.feature-item svg {
+  width: 32px;
+  height: 32px;
+  color: #14b8a6;
+}
+
+.feature-item span {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+  text-align: center;
+}
+
+.coming-soon-dates {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 32px;
+  background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+  border-radius: 16px;
+  border: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+.date-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.date-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #14b8a6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.date-value {
+  font-family: 'Sora', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.date-divider {
+  font-size: 24px;
+  color: #14b8a6;
+}
+
+@media (max-width: 768px) {
+  .coming-soon-section {
+    padding: 60px 0;
+  }
+
+  .coming-soon-title {
+    font-size: 28px;
+  }
+
+  .coming-soon-features {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .coming-soon-dates {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .date-divider {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .page-hero {
     padding: 60px 0;

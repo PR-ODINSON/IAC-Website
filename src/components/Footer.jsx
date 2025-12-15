@@ -38,7 +38,7 @@ const Footer = () => {
 
           <div className="footer-info">
             <h4>Event Details</h4>
-            <p>23–24 January 2026</p>
+            <p>20–21 February 2026</p>
             <p>IITRAM, Ahmedabad</p>
           </div>
         </div>

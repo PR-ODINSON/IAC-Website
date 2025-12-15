@@ -1,6 +1,6 @@
 export const scheduleData = {
   day1: {
-    date: "Friday, 23 January 2026",
+    date: "Thursday, 20 February 2026",
     theme: "Innovation, Industry & Integration",
     sessions: [
       {
@@ -41,7 +41,7 @@ export const scheduleData = {
     ]
   },
   day2: {
-    date: "Saturday, 24 January 2026",
+    date: "Friday, 21 February 2026",
     theme: "Entrepreneurship, Collaboration & Future Vision",
     sessions: [
       {

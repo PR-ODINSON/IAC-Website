@@ -23,8 +23,8 @@ const Contact = () => {
               </div>
               <div className="info-content">
                 <h3 className="info-label">Email Us</h3>
-                <a href="mailto:cdc@iitram.ac.in" className="info-value">
-                  cdc@iitram.ac.in
+                <a href="mailto:Prithviraj.Verma.23co@iitram.ac.in" className="info-value">
+                  Prithviraj.Verma.23co@iitram.ac.in
                 </a>
               </div>
             </div>
@@ -37,8 +37,8 @@ const Contact = () => {
               </div>
               <div className="info-content">
                 <h3 className="info-label">Call Us</h3>
-                <a href="tel:+91XXXXXXXXXX" className="info-value">
-                  +91-XXXXXXXXXX
+                <a href="tel:+917697966155" className="info-value">
+                  +91 - 7697966155
                 </a>
               </div>
             </div>
@@ -52,45 +52,81 @@ const Contact = () => {
               </div>
               <div className="info-content">
                 <h3 className="info-label">Visit Us</h3>
-                <p className="info-value">
+                <a href="https://maps.app.goo.gl/gNTFWnMdr3u4fkQ89" target="_blank" rel="noopener noreferrer" className="info-value">
                   IITRAM, Ahmedabad, Gujarat
-                </p>
+                </a>
               </div>
             </div>
           </div>
 
           <div className="contact-cta-box">
-            <h3 className="cta-box-title">Register Your Interest</h3>
+            <h3 className="cta-box-title">Send Us Your Query</h3>
             <p className="cta-box-description">
               Whether you're a student looking to participate or a company interested in 
               partnering, we'd love to hear from you.
             </p>
             
-            <div className="cta-box-options">
-              <div className="option-item">
-                <svg className="option-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-                <span>Students: Register for Udgam 2026</span>
-              </div>
-              <div className="option-item">
-                <svg className="option-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-                <span>Companies: Partnership Opportunities</span>
-              </div>
-            </div>
-
-            <a 
-              href="mailto:cdc@iitram.ac.in?subject=Udgam 2026 Query" 
-              className="contact-cta-button"
+            <form 
+              action="https://formspree.io/f/xyzrvadn" 
+              method="POST"
+              className="contact-form"
             >
-              Send Us Your Query
-            </a>
+              <div className="form-group">
+                <label htmlFor="name" className="form-label">Name</label>
+                <input 
+                  type="text" 
+                  id="name"
+                  name="name"
+                  className="form-input" 
+                  placeholder="Enter your full name"
+                  required 
+                />
+              </div>
 
-            <p className="contact-note">
-              Registrations will open soon. Stay tuned for updates!
-            </p>
+              <div className="form-group">
+                <label htmlFor="email" className="form-label">Email</label>
+                <input 
+                  type="email" 
+                  id="email"
+                  name="email"
+                  className="form-input" 
+                  placeholder="your.email@example.com"
+                  required 
+                />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="subject" className="form-label">Subject</label>
+                <input 
+                  type="text" 
+                  id="subject"
+                  name="subject"
+                  className="form-input" 
+                  placeholder="What is this regarding?"
+                  required 
+                />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="message" className="form-label">Message</label>
+                <textarea 
+                  id="message"
+                  name="message"
+                  className="form-textarea" 
+                  placeholder="Tell us more about your query..."
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" className="contact-cta-button">
+                Send Message
+              </button>
+
+              <p className="contact-note">
+                We'll get back to you within 24-48 hours!
+              </p>
+            </form>
           </div>
         </div>
       </div>

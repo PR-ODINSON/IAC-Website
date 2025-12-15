@@ -157,9 +157,20 @@
 }
 
 .stat-card-highlight {
+  background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+}
+
+.stat-card-highlight .stat-number {
   background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%);
-  border: none;
-  color: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-card-highlight:hover {
+  background: linear-gradient(135deg, #ccfbf1 0%, #99f6e4 100%);
+  border-color: rgba(20, 184, 166, 0.5);
 }
 
 .stat-number {
@@ -168,10 +179,7 @@
   font-weight: 700;
   line-height: 1;
   margin-bottom: 8px;
-}
-
-.stat-card-highlight .stat-number {
-  color: white;
+  color: #0f172a;
 }
 
 .stat-label {
@@ -182,17 +190,9 @@
   margin-bottom: 4px;
 }
 
-.stat-card-highlight .stat-label {
-  color: rgba(255, 255, 255, 0.95);
-}
-
 .stat-detail {
   font-size: 13px;
   color: #64748b;
-}
-
-.stat-card-highlight .stat-detail {
-  color: rgba(255, 255, 255, 0.7);
 }
 
 .hero-accent {

@@ -3,7 +3,7 @@ import './Countdown.css';
 
 const Countdown = () => {
   // Countdown calculates days remaining automatically — no static numbers.
-  const targetDate = new Date('2026-01-23T09:00:00+05:30').getTime();
+  const targetDate = new Date('2026-02-20T09:00:00+05:30').getTime();
   
   const calculateTimeLeft = () => {
     const now = new Date().getTime();
