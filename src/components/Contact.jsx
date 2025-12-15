@@ -26,6 +26,12 @@ const Contact = () => {
                 <a href="mailto:Prithviraj.Verma.23co@iitram.ac.in" className="info-value">
                   Prithviraj.Verma.23co@iitram.ac.in
                 </a>
+                <a href="mailto:rishava.singh.23e@iitram.ac.in" className="info-value" style={{ display: 'block', marginTop: '8px' }}>
+                  rishava.singh.23e@iitram.ac.in
+                </a>
+                <a href="mailto:harsh.tiwari.22e@iitram.ac.in" className="info-value" style={{ display: 'block', marginTop: '8px' }}>
+                  harsh.tiwari.22e@iitram.ac.in
+                </a>
               </div>
             </div>
 
@@ -37,9 +43,17 @@ const Contact = () => {
               </div>
               <div className="info-content">
                 <h3 className="info-label">Call Us</h3>
-                <a href="tel:+917697966155" className="info-value">
-                  +91 - 7697966155
-                </a>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                  <a href="tel:+917697966155" className="info-value">
+                    Prithviraj: +91 7697966155
+                  </a>
+                  <a href="tel:+916201671778" className="info-value">
+                    Rishava: +91 6201671778
+                  </a>
+                  <a href="tel:+918978318705" className="info-value">
+                    Harsh: +91 8978318705
+                  </a>
+                </div>
               </div>
             </div>
 
