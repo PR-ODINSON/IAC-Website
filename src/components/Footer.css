@@ -13,7 +13,7 @@
 
 .footer-content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr 1.2fr 1.3fr;
   gap: 48px;
   padding-bottom: 48px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -32,6 +32,12 @@
   font-size: 14px;
 }
 
+.footer-college {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+}
+
 .footer-tagline {
   margin-top: 12px !important;
   color: rgba(255, 255, 255, 0.5) !important;
@@ -39,7 +45,8 @@
 }
 
 .footer-links h4,
-.footer-info h4 {
+.footer-info h4,
+.footer-address h4 {
   font-family: 'Sora', sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -74,6 +81,54 @@
   color: rgba(255, 255, 255, 0.7);
   margin: 6px 0;
   font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-info p strong {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+.footer-info .footer-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-info .footer-link:hover {
+  color: #14b8a6;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background: #14b8a6;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.footer-address p {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 6px 0;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .footer-note {
@@ -127,6 +182,10 @@
     font-size: 24px;
   }
 
+  .footer-address {
+    grid-column: 1 / -1;
+  }
+
   .footer-bottom {
     padding-top: 24px;
   }
@@ -159,14 +218,31 @@
 
   .footer-brand p,
   .footer-info p,
+  .footer-address p,
   .footer-link {
     font-size: 13px;
   }
 
   .footer-links h4,
-  .footer-info h4 {
+  .footer-info h4,
+  .footer-address h4 {
     font-size: 15px;
     margin-bottom: 12px;
+  }
+
+  .footer-social {
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .social-link {
+    width: 32px;
+    height: 32px;
+  }
+
+  .social-link svg {
+    width: 16px;
+    height: 16px;
   }
 
   .footer-bottom {

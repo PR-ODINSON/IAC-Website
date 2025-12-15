@@ -31,11 +31,12 @@
 .highlight-card {
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.06);
-  border-radius: 12px;
+  border-radius: 16px;
   padding: 32px;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .highlight-card::before {
@@ -44,60 +45,101 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 4px;
   background: linear-gradient(90deg, #14b8a6 0%, #2dd4bf 100%);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.highlight-card::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(20, 184, 166, 0.05);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.5s ease;
 }
 
 .highlight-card:hover::before {
   transform: scaleX(1);
 }
 
+.highlight-card:hover::after {
+  width: 500px;
+  height: 500px;
+}
+
 .highlight-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
-  border-color: rgba(20, 184, 166, 0.15);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 48px rgba(20, 184, 166, 0.15);
+  border-color: rgba(20, 184, 166, 0.3);
 }
 
 .highlight-icon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
-  border-radius: 10px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #14b8a6;
   margin-bottom: 20px;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
 }
 
 .highlight-card:hover .highlight-icon {
   background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%);
   color: white;
-  transform: scale(1.05);
+  transform: scale(1.15) rotate(-8deg);
+  box-shadow: 0 8px 20px rgba(20, 184, 166, 0.3);
 }
 
 .highlight-icon svg {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.highlight-card:hover .highlight-icon svg {
+  transform: scale(1.1);
 }
 
 .highlight-title {
   font-family: 'Sora', sans-serif;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 600;
   color: #0f172a;
   margin: 0 0 12px 0;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.highlight-card:hover .highlight-title {
+  color: #0d9488;
 }
 
 .highlight-description {
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #64748b;
   margin: 0;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.highlight-card:hover .highlight-description {
+  color: #475569;
+}
 }
 
 @media (max-width: 968px) {
