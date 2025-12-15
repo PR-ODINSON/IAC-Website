@@ -265,7 +265,7 @@
 
 @media (max-width: 968px) {
   .speakers {
-    padding: 80px 0;
+    padding: 50px 0;
   }
 
   .speakers-container {
@@ -276,6 +276,24 @@
     margin-bottom: 48px;
   }
 
+  .speakers-announcement {
+    padding: 36px;
+  }
+
+  .announcement-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .speakers-announcement h3 {
+    font-size: 24px;
+  }
+
+  .speaker-categories {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
   .speakers-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -283,6 +301,74 @@
 
   .speaker-card {
     padding: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .speakers {
+    padding: 40px 0;
+  }
+
+  .speakers-container {
+    padding: 0 16px;
+  }
+
+  .speakers-header {
+    margin-bottom: 40px;
+  }
+
+  .speakers-announcement {
+    padding: 28px 20px;
+    margin-bottom: 36px;
+  }
+
+  .announcement-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+  }
+
+  .announcement-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .speakers-announcement h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .speakers-announcement p {
+    font-size: 15px;
+  }
+
+  .speaker-categories {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .category-card {
+    padding: 24px 20px;
+  }
+
+  .speaker-card {
+    padding: 20px;
+  }
+
+  .speaker-name {
+    font-size: 18px;
+  }
+
+  .speaker-title {
+    font-size: 14px;
+  }
+
+  .speaker-org {
+    font-size: 13px;
+  }
+
+  .speaker-topic {
+    font-size: 13px;
   }
 }
 

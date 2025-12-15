@@ -96,7 +96,7 @@
 
 @media (max-width: 968px) {
   .company-benefits {
-    padding: 80px 0;
+    padding: 50px 0;
   }
 
   .company-container {
@@ -108,12 +108,66 @@
   }
 
   .company-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
   }
 
   .company-benefit-card {
     padding: 28px;
+  }
+
+  .company-benefit-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 20px;
+  }
+
+  .company-benefit-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .company-benefits {
+    padding: 40px 0;
+  }
+
+  .company-container {
+    padding: 0 16px;
+  }
+
+  .company-header {
+    margin-bottom: 40px;
+  }
+
+  .company-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .company-benefit-card {
+    padding: 24px 20px;
+  }
+
+  .company-benefit-icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 18px;
+  }
+
+  .company-benefit-icon svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .company-benefit-title {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .company-benefit-description {
+    font-size: 14px;
   }
 }
 

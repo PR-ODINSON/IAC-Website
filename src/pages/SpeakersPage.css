@@ -32,17 +32,35 @@
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .speakers-page {
     padding-top: 70px;
   }
 
   .speakers-page .page-hero {
-    padding: 3rem 1.5rem;
+    padding: 3.5rem 2rem;
   }
 
   .speakers-page .page-hero-title {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+  }
+
+  .speakers-page .page-hero-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .speakers-page {
+    padding-top: 60px;
+  }
+
+  .speakers-page .page-hero {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .speakers-page .page-hero-title {
+    font-size: 2rem;
   }
 
   .speakers-page .page-hero-description {

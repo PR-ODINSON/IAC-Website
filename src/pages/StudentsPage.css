@@ -136,25 +136,21 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .registration-cta {
-    padding: 60px 0;
-  }
-
-  .registration-container {
-    padding: 0 20px;
+    padding: 60px 20px;
   }
 
   .registration-cta h2 {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .registration-cta p {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .invite-only-section {
-    padding: 60px 0;
+    padding: 50px 0;
   }
 
   .invite-container {
@@ -162,16 +158,69 @@
   }
 
   .invite-title {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .invite-description {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .invite-features {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .registration-cta {
+    padding: 50px 16px;
+  }
+
+  .registration-cta h2 {
+    font-size: 26px;
+  }
+
+  .registration-cta p {
+    font-size: 16px;
+  }
+
+  .invite-only-section {
+    padding: 40px 0;
+  }
+
+  .invite-container {
+    padding: 0 16px;
+  }
+
+  .invite-badge {
+    padding: 8px 16px;
+    margin-bottom: 20px;
+  }
+
+  .invite-badge span {
+    font-size: 13px;
+  }
+
+  .invite-title {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .invite-description {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .invite-features {
+    gap: 14px;
+  }
+
+  .invite-feature {
+    padding: 16px;
+  }
+
+  .invite-feature span {
+    font-size: 14px;
   }
 }
 

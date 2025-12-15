@@ -176,17 +176,22 @@
   margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .schedule {
-    padding: 80px 0;
+    padding: 50px 0;
   }
 
   .schedule-container {
     padding: 0 20px;
   }
 
+  .schedule-header {
+    margin-bottom: 44px;
+  }
+
   .day-tabs {
     gap: 12px;
+    margin-bottom: 40px;
   }
 
   .day-tab {
@@ -202,12 +207,70 @@
   }
 
   .schedule-content {
-    padding: 28px 20px;
+    padding: 32px 24px;
+  }
+
+  .schedule-theme {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+  }
+
+  .theme-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .schedule {
+    padding: 40px 0;
+  }
+
+  .schedule-container {
+    padding: 0 16px;
+  }
+
+  .schedule-header {
+    margin-bottom: 36px;
+  }
+
+  .day-tabs {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .day-tab {
+    padding: 14px;
+  }
+
+  .tab-day {
+    font-size: 15px;
+  }
+
+  .tab-date {
+    font-size: 12px;
+  }
+
+  .schedule-content {
+    padding: 24px 16px;
+  }
+
+  .schedule-theme {
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+  }
+
+  .theme-label {
+    font-size: 12px;
+  }
+
+  .theme-text {
+    font-size: 15px;
   }
 
   .session-item {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 12px;
   }
 
   .session-time {
@@ -215,20 +278,31 @@
   }
 
   .time-text {
-    font-size: 14px;
-    padding: 6px 12px;
+    font-size: 13px;
+    padding: 5px 10px;
   }
 
   .session-content {
-    padding-left: 24px;
+    padding-left: 20px;
+  }
+
+  .session-connector {
+    width: 20px;
+    height: 20px;
+    left: -10px;
+  }
+
+  .session-item:not(:last-child) .session-connector::after {
+    top: 10px;
+    height: 32px;
   }
 
   .session-title {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .session-description {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 

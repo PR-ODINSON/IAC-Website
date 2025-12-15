@@ -84,7 +84,7 @@
 
 @media (max-width: 968px) {
   .students-benefits {
-    padding: 80px 0;
+    padding: 50px 0;
   }
 
   .students-container {
@@ -112,6 +112,52 @@
   .benefit-icon svg {
     width: 24px;
     height: 24px;
+  }
+
+  .benefit-title {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 640px) {
+  .students-benefits {
+    padding: 40px 0;
+  }
+
+  .students-container {
+    padding: 0 16px;
+  }
+
+  .students-header {
+    margin-bottom: 40px;
+  }
+
+  .benefits-grid {
+    gap: 16px;
+  }
+
+  .benefit-card {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .benefit-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .benefit-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .benefit-title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .benefit-description {
+    font-size: 14px;
   }
 }
 

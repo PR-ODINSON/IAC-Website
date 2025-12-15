@@ -274,7 +274,7 @@
 
 @media (max-width: 968px) {
   .stalls-sponsors {
-    padding: 80px 0;
+    padding: 50px 0;
   }
 
   .stalls-sponsors-container {
@@ -282,15 +282,20 @@
   }
 
   .stalls-sponsors-header {
-    margin-bottom: 60px;
+    margin-bottom: 56px;
   }
 
   .subsection {
-    margin-bottom: 60px;
+    margin-bottom: 56px;
   }
 
   .subsection-title {
     font-size: 28px;
+  }
+
+  .subsection-description {
+    font-size: 15px;
+    margin-bottom: 40px;
   }
 
   .stalls-grid {
@@ -308,11 +313,95 @@
   }
 
   .cta-box {
-    padding: 36px 24px;
+    padding: 40px 28px;
+    margin-top: 60px;
   }
 
   .cta-title {
-    font-size: 26px;
+    font-size: 28px;
+  }
+
+  .cta-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .stalls-sponsors {
+    padding: 40px 0;
+  }
+
+  .stalls-sponsors-container {
+    padding: 0 16px;
+  }
+
+  .stalls-sponsors-header {
+    margin-bottom: 44px;
+  }
+
+  .subsection {
+    margin-bottom: 44px;
+  }
+
+  .subsection-title {
+    font-size: 24px;
+  }
+
+  .subsection-description {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+
+  .stall-card {
+    padding: 24px 20px;
+  }
+
+  .featured-badge {
+    font-size: 10px;
+    padding: 3px 8px;
+    top: 12px;
+    right: 12px;
+  }
+
+  .stall-name {
+    font-size: 18px;
+  }
+
+  .stall-price {
+    font-size: 28px;
+  }
+
+  .sponsor-card {
+    padding: 24px 20px;
+  }
+
+  .sponsor-tier {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  .sponsor-name {
+    font-size: 18px;
+  }
+
+  .cta-box {
+    padding: 32px 20px;
+    margin-top: 48px;
+  }
+
+  .cta-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .cta-description {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 12px 28px;
   }
 }
 

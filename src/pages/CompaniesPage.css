@@ -164,42 +164,29 @@
   background: #f0f0f0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .companies-page {
     padding-top: 70px;
   }
 
   .page-hero {
-    padding: 3rem 1.5rem;
+    padding: 3.5rem 2rem;
   }
 
   .page-hero-title {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 
   .page-hero-description {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .registration-cta {
-    padding: 3rem 1.5rem;
-  }
-
-  .registration-container h2 {
-    font-size: 2rem;
-  }
-
-  .registration-container p {
-    font-size: 1rem;
-  }
-
-  .cta-button {
-    padding: 0.9rem 2rem;
-    font-size: 1rem;
+    padding: 3.5rem 2rem;
   }
 
   .interest-form-section {
-    padding: 60px 0;
+    padding: 50px 0;
   }
 
   .interest-form-container {
@@ -207,7 +194,63 @@
   }
 
   .form-title {
-    font-size: 32px;
+    font-size: 36px;
+  }
+
+  .form-description {
+    font-size: 17px;
+  }
+
+  .form-features {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .companies-page {
+    padding-top: 60px;
+  }
+
+  .page-hero {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .page-hero-title {
+    font-size: 2rem;
+  }
+
+  .page-hero-description {
+    font-size: 1rem;
+  }
+
+  .registration-cta {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .registration-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .registration-container p {
+    font-size: 0.95rem;
+  }
+
+  .cta-button {
+    padding: 0.85rem 1.75rem;
+    font-size: 0.95rem;
+  }
+
+  .interest-form-section {
+    padding: 40px 0;
+  }
+
+  .interest-form-container {
+    padding: 0 16px;
+  }
+
+  .form-title {
+    font-size: 28px;
   }
 
   .form-description {
@@ -215,7 +258,10 @@
   }
 
   .form-features {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 14px;
+  }
+
+  .form-feature {
+    padding: 16px;
   }
 }
