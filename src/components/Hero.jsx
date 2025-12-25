@@ -45,9 +45,6 @@ const Hero = () => {
           </div>
 
           <div className="hero-actions">
-            <Link to="/contact" className="btn-primary">
-              Register Now
-            </Link>
             <a href="#brochure" className="btn-secondary">
               Download Brochure
             </a>

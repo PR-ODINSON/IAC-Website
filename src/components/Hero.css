@@ -132,6 +132,11 @@
   flex-wrap: wrap;
 }
 
+.hero-register-dropdown {
+  position: relative;
+  z-index: 100;
+}
+
 .btn-primary,
 .btn-secondary {
   font-family: 'Inter', sans-serif;
@@ -142,9 +147,12 @@
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .btn-primary::before,
@@ -173,6 +181,14 @@
   box-shadow: 0 4px 12px rgba(20, 184, 166, 0.2);
 }
 
+.btn-primary svg {
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow-open {
+  transform: rotate(180deg);
+}
+
 .btn-primary:hover {
   background: #0d9488;
   border-color: #0d9488;
@@ -182,6 +198,97 @@
 
 .btn-primary:active {
   transform: translateY(-1px);
+}
+
+.hero-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 0;
+  width: 320px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  z-index: 200;
+  animation: dropdownSlide 0.3s ease;
+}
+
+@keyframes dropdownSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-dropdown-menu .dropdown-header {
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.hero-dropdown-menu .dropdown-header h3 {
+  font-family: 'Sora', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+}
+
+.hero-dropdown-menu .dropdown-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: #0f172a;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.hero-dropdown-menu .dropdown-item:hover {
+  background: #f0fdfa;
+  border-left-color: #14b8a6;
+}
+
+.hero-dropdown-menu .dropdown-item svg {
+  width: 24px;
+  height: 24px;
+  color: #14b8a6;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.hero-dropdown-menu .dropdown-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hero-dropdown-menu .dropdown-item strong {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.hero-dropdown-menu .dropdown-item span {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.dropdown-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 150;
 }
 
 .btn-secondary {
