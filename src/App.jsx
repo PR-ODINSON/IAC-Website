@@ -9,6 +9,7 @@ import CompaniesPage from './pages/CompaniesPage';
 import SponsorshipPage from './pages/SponsorshipPage';
 import PitchYourIdea from './pages/PitchYourIdea';
 import ContactPage from './pages/ContactPage';
+import FAQPage from './pages/FAQPage';
 import NotFound from './pages/NotFound';
 import './App.css';
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/sponsorship" element={<SponsorshipPage />} />
           <Route path="/pitch-your-idea" element={<PitchYourIdea />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/faqs" element={<FAQPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

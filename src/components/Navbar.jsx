@@ -31,6 +31,7 @@ const Navbar = () => {
     { label: 'For Companies', path: '/companies' },
     { label: 'Sponsorship', path: '/sponsorship' },
     { label: 'Pitch Your Idea', path: '/pitch-your-idea' },
+    { label: 'FAQs', path: '/faqs' },
     { label: 'Contact', path: '/contact' }
   ];
 
