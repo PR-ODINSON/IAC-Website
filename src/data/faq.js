@@ -1,7 +1,7 @@
 export const faqData = [
   {
     id: 1,
-    question: "Who can attend the Industry–Academia Conclave 2026?",
+    question: "Who can attend Udgam 2026?",
     answer: "Udgam 2026 is open to all engineering students from colleges across Gujarat. We welcome students from all years and branches who are interested in industry exposure, innovation, and career development."
   },
   {
@@ -27,7 +27,7 @@ export const faqData = [
   {
     id: 6,
     question: "What are the event dates and timings?",
-    answer: "Udgam 2026 will be held on February 20-21, 2026 at IIT Ram, Ahmedabad. Day 1 runs from 9:00 AM to 5:00 PM and Day 2 from 9:00 AM to 4:00 PM. The detailed schedule is available on our Schedule page."
+    answer: "Udgam 2026 will be held on February 20-21, 2026 at IITRAM, Ahmedabad. Day 1 runs from 9:00 AM to 5:00 PM and Day 2 from 9:00 AM to 4:00 PM. The detailed schedule is available on our Schedule page."
   },
   {
     id: 7,
@@ -52,7 +52,7 @@ export const faqData = [
   {
     id: 11,
     question: "How do I register for Udgam 2026?",
-    answer: "Registration will open soon. You can register by visiting our Contact page and filling out the registration form, or by emailing your details to cdc@iitram.ac.in. Follow our official communication channels for registration updates."
+    answer: "Udgam 2026 is invite-only. CDC IITRAM will distribute participation passes to select engineering colleges across Gujarat. Contact your college's placement cell or email cdc@iitram.ac.in to check if your institution is included in the invite list."
   },
   {
     id: 12,

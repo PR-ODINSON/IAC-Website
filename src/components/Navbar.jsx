@@ -23,6 +23,37 @@ const Navbar = () => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
+  // Keyboard navigation for dropdowns
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        if (registerDropdownOpen) {
+          setRegisterDropdownOpen(false);
+        }
+        if (mobileMenuOpen) {
+          setMobileMenuOpen(false);
+        }
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [registerDropdownOpen, mobileMenuOpen]);
+
+  const handleRegisterButtonKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      setRegisterDropdownOpen(!registerDropdownOpen);
+    }
+  };
+
+  const handleMenuToggleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      setMobileMenuOpen(!mobileMenuOpen);
+    }
+  };
+
   const navLinks = [
     { label: 'Home', path: '/' },
     { label: 'Schedule', path: '/schedule' },
@@ -51,6 +82,10 @@ const Navbar = () => {
             <button 
               className="register-button"
               onClick={() => setRegisterDropdownOpen(!registerDropdownOpen)}
+              onKeyDown={handleRegisterButtonKeyDown}
+              aria-expanded={registerDropdownOpen}
+              aria-haspopup="true"
+              aria-label="Register interest dropdown menu"
             >
               Register Interest
               <svg 
@@ -61,6 +96,7 @@ const Navbar = () => {
                 fill="none" 
                 stroke="currentColor" 
                 strokeWidth="2"
+                aria-hidden="true"
               >
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
@@ -68,17 +104,19 @@ const Navbar = () => {
             
             {registerDropdownOpen && (
               <>
-                <div className="register-dropdown">
+                <div className="register-dropdown" role="menu" aria-label="Registration options">
                   <div className="dropdown-header">
-                    <h3>What are you interested in?</h3>
+                    <h3 id="dropdown-title">What are you interested in?</h3>
                   </div>
                   <a 
                     href="https://forms.gle/SoAjwWNzQzCJWLgs6" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="dropdown-item"
+                    role="menuitem"
+                    aria-label="Register for student passes"
                   >
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                       <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                       <circle cx="9" cy="7" r="4"></circle>
                       <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -94,8 +132,10 @@ const Navbar = () => {
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="dropdown-item"
+                    role="menuitem"
+                    aria-label="Book a company stall"
                   >
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                       <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
                       <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                     </svg>
@@ -109,8 +149,10 @@ const Navbar = () => {
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="dropdown-item"
+                    role="menuitem"
+                    aria-label="Express sponsorship interest"
                   >
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                       <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
                       <path d="M2 17l10 5 10-5"></path>
                       <path d="M2 12l10 5 10-5"></path>
@@ -124,6 +166,7 @@ const Navbar = () => {
                 <div 
                   className="dropdown-overlay" 
                   onClick={() => setRegisterDropdownOpen(false)}
+                  aria-hidden="true"
                 />
               </>
             )}
@@ -131,7 +174,10 @@ const Navbar = () => {
           <button 
             className="menu-toggle"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
+            onKeyDown={handleMenuToggleKeyDown}
+            aria-expanded={mobileMenuOpen}
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-controls="mobile-menu"
           >
             <span className="menu-toggle-text">Menu</span>
             <svg 
@@ -144,6 +190,7 @@ const Navbar = () => {
               strokeWidth="2.5"
               strokeLinecap="round"
               strokeLinejoin="round"
+              aria-hidden="true"
             >
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
@@ -151,24 +198,31 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className={`sidebar-menu ${mobileMenuOpen ? 'sidebar-open' : ''}`}>
-        <div className="sidebar-content">
+      <aside 
+        className={`sidebar-menu ${mobileMenuOpen ? 'sidebar-open' : ''}`}
+        id="mobile-menu"
+        role="navigation"
+        aria-label="Mobile navigation"
+      >
+        <nav className="sidebar-content" role="menu">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
               className={`sidebar-link ${location.pathname === link.path ? 'sidebar-link-active' : ''}`}
+              role="menuitem"
             >
               {link.label}
             </Link>
           ))}
-        </div>
-      </div>
+        </nav>
+      </aside>
       
       {mobileMenuOpen && (
         <div 
           className="sidebar-overlay" 
           onClick={() => setMobileMenuOpen(false)}
+          aria-hidden="true"
         />
       )}
     </nav>

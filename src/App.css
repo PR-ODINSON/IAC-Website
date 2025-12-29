@@ -2,6 +2,27 @@
   box-sizing: border-box;
 }
 
+/* Skip to content link for keyboard accessibility */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 12px 24px;
+  background: #14b8a6;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0 0 8px 0;
+  transition: all 0.2s ease;
+}
+
+.skip-to-content:focus {
+  left: 0;
+  top: 0;
+  outline: 3px solid rgba(20, 184, 166, 0.5);
+  outline-offset: 2px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -13,7 +34,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #0f172a;
+  color: #1e293b;
   background: #fafbfc;
   background-image: 
     radial-gradient(circle at 15% 20%, rgba(20, 184, 166, 0.05) 0%, transparent 40%),
@@ -65,7 +86,7 @@ body {
 .section-description {
   font-size: 17px;
   line-height: 1.7;
-  color: #64748b;
+  color: #475569;
   margin: 16px 0 0 0;
 }
 

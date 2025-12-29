@@ -60,15 +60,14 @@ const StallsAndSponsors = ({ showStalls = true, showSponsorship = true, showCTA 
             <h3 className="subsection-title">Sponsorship Packages</h3>
             <p className="subsection-description">
               Comprehensive sponsorship tiers offering brand visibility, speaking opportunities, 
-            and exclusive access to Udgam 2026.
-          </p>
-          
-          <div className="sponsors-grid">
-            {sponsorshipPackages.map((sponsor, index) => (
-              <div 
-                key={index} 
-                className={`sponsor-card ${sponsor.highlight ? 'sponsor-highlight' : ''}`}
-              >
+              and exclusive access to Udgam 2026.
+            </p>
+            <div className="sponsor-grid">
+              {sponsorshipPackages.map((sponsor, index) => (
+                <div 
+                  key={index} 
+                  className={`sponsor-card ${sponsor.highlight ? 'sponsor-highlight' : ''}`}
+                >
                 <div className="sponsor-tier">{sponsor.tier}</div>
                 <div className="sponsor-price">{sponsor.price}</div>
                 <ul className="sponsor-features">

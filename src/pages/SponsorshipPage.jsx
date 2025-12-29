@@ -16,7 +16,7 @@ const SponsorshipPage = () => {
           </p>
         </div>
       </div>
-      <StallsAndSponsors />
+      <StallsAndSponsors showStalls={false} showSponsorship={true} showCTA={true} />
     </div>
   );
 };

@@ -96,7 +96,7 @@
 
 /* Section Styling */
 .pitch-section {
-  padding: 100px 20px;
+  padding: 80px 20px;
 }
 
 .pitch-container {
@@ -885,6 +885,10 @@
 
   .pitch-hero-title {
     font-size: 2.75rem;
+  }
+
+  .pitch-section {
+    padding: 60px 20px;
   }
 
   .pitch-hero-subtitle {

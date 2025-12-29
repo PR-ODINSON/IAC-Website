@@ -1,0 +1,162 @@
+/* Base Skeleton Styles */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.skeleton-card,
+.skeleton-speaker-card,
+.skeleton-schedule-item {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 32px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.skeleton-icon,
+.skeleton-avatar,
+.skeleton-time,
+.skeleton-title,
+.skeleton-text {
+  background: linear-gradient(
+    90deg,
+    #f1f5f9 0%,
+    #e2e8f0 50%,
+    #f1f5f9 100%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite linear;
+  border-radius: 8px;
+}
+
+/* Card Skeleton */
+.skeleton-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skeleton-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+}
+
+.skeleton-title {
+  height: 24px;
+  width: 70%;
+}
+
+.skeleton-text {
+  height: 16px;
+  width: 100%;
+}
+
+.skeleton-text.short {
+  width: 60%;
+}
+
+/* Speaker Card Skeleton */
+.skeleton-speaker-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.skeleton-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+/* Schedule Item Skeleton */
+.skeleton-schedule-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.skeleton-time {
+  height: 40px;
+  width: 120px;
+}
+
+.skeleton-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Grid Layouts */
+.skeleton-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.skeleton-grid-card {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.skeleton-grid-speaker {
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.skeleton-grid-schedule {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .skeleton-card,
+  .skeleton-speaker-card,
+  .skeleton-schedule-item {
+    padding: 24px;
+  }
+
+  .skeleton-schedule-item {
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+  }
+
+  .skeleton-time {
+    width: 90px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 640px) {
+  .skeleton-card,
+  .skeleton-speaker-card,
+  .skeleton-schedule-item {
+    padding: 20px;
+  }
+
+  .skeleton-schedule-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .skeleton-time {
+    width: 100%;
+  }
+}

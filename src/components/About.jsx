@@ -25,9 +25,9 @@ const About = () => {
             </p>
             
             <p className="about-description">
-              Our vision is to bridge the critical skill gap between classroom learning and 
-              real-world industry practices. Through Udgam 2026, we're creating a platform that 
-              focuses on innovation, entrepreneurship, employability, and meaningful collaboration 
+              Our mission is to bridge the gap between classroom learning and industry practice. 
+              Through Udgam 2026, we're creating a platform that focuses on innovation, 
+              entrepreneurship, employability, and fostering meaningful industry collaborations 
               across sectors.
             </p>
 

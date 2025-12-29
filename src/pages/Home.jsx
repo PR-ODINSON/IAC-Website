@@ -9,7 +9,7 @@ const Home = () => {
   usePageTitle('');
   
   return (
-    <div className="home-page">
+    <main id="main-content" className="home-page">
       <Hero />
       <About />
       <Highlights />
@@ -18,7 +18,7 @@ const Home = () => {
       <section className="quick-links-section">
         <div className="quick-links-container">
           <div className="section-label">Navigate</div>
-          <h2 className="quick-links-title">Explore Udgam 2026</h2>
+          <h2 className="quick-links-title">Explore the Event</h2>
           <p className="quick-links-description">
             Discover everything about the event — from schedules and speakers to participation opportunities and sponsorship details.
           </p>
@@ -95,7 +95,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 

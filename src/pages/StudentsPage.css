@@ -5,7 +5,7 @@
 }
 
 .invite-only-section {
-  padding: 60px 0;
+  padding: 80px 0;
   background: linear-gradient(135deg, #f0fdfa 0%, #ffffff 100%);
 }
 
@@ -55,7 +55,7 @@
 .invite-description {
   font-size: 18px;
   line-height: 1.8;
-  color: #475569;
+  color: #334155;
   margin: 0 0 48px 0;
 }
 
@@ -181,6 +181,12 @@
   }
 
   .registration-cta p {
+    font-size: 16px;
+  }
+  
+  .registration-cta .cta-button {
+    width: 100%;
+    padding: 16px 32px;
     font-size: 16px;
   }
 
