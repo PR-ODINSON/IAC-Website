@@ -339,7 +339,7 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(20, 184, 166, 0.05), transparent);
-  transition: left 0.5s ease;
+  transition: left 1.2s ease;
 }
 
 .stat-card:hover::before {
@@ -355,6 +355,9 @@
 .stat-card-highlight {
   background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
   border: 1px solid rgba(20, 184, 166, 0.3);
+}
+
+.stat-card-highlight:hover {
   animation: shimmer 3s ease-in-out infinite;
 }
 
@@ -372,6 +375,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.stat-card-highlight:hover .stat-number {
   animation: float 3s ease-in-out infinite;
 }
 

@@ -63,7 +63,7 @@ const PitchYourIdea = () => {
       <section className="pitch-hero">
         <div className="pitch-hero-container">
           <div className="pitch-badge">
-            Open to students from engineering colleges across Gujarat
+            Open to students and companies
           </div>
           <h1 className="pitch-hero-title">Pitch Your Idea Competition</h1>
           <p className="pitch-hero-subtitle">
@@ -76,7 +76,7 @@ const PitchYourIdea = () => {
           
           <div className="pitch-hero-actions">
             <a 
-              href="mailto:cdc@iitram.ac.in?subject=Pitch Your Idea Registration - Udgam 2026" 
+              href="mailto:chair_cdc@iitram.ac.in?subject=Pitch Your Idea Registration - Udgam 2026" 
               className="pitch-cta-primary"
             >
               Register Your Idea
@@ -219,8 +219,8 @@ const PitchYourIdea = () => {
               <svg className="eligibility-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
               </svg>
-              <h3>Open to All Students</h3>
-              <p>Students from IITRAM and other engineering colleges across Gujarat are welcome.</p>
+              <h3>Open to All Students & Companies</h3>
+              <p>Students from IITRAM and other engineering colleges across Gujarat, as well as companies are welcome.</p>
             </div>
             
             <div className="eligibility-card">
@@ -228,7 +228,7 @@ const PitchYourIdea = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
               <h3>Individual or Team</h3>
-              <p>Participate individually or form teams of up to 3–4 members.</p>
+              <p>Participate individually or form teams of up to 1–3 members.</p>
             </div>
             
             <div className="eligibility-card">
@@ -362,7 +362,7 @@ const PitchYourIdea = () => {
               <div className="timeline-marker"></div>
               <div className="timeline-content">
                 <h3 className="timeline-title">Registration Opens</h3>
-                <p className="timeline-date">To be announced</p>
+                <p className="timeline-date">25th January 2026</p>
                 <p className="timeline-description">Online registration portal will be opened for all participants.</p>
               </div>
             </div>
@@ -371,7 +371,7 @@ const PitchYourIdea = () => {
               <div className="timeline-marker"></div>
               <div className="timeline-content">
                 <h3 className="timeline-title">Registration Deadline</h3>
-                <p className="timeline-date">To be announced</p>
+                <p className="timeline-date">15th February 2026</p>
                 <p className="timeline-description">Last date to register your idea for the competition.</p>
               </div>
             </div>
@@ -380,7 +380,7 @@ const PitchYourIdea = () => {
               <div className="timeline-marker"></div>
               <div className="timeline-content">
                 <h3 className="timeline-title">Round 1 – Idea Pitches</h3>
-                <p className="timeline-date">20 February 2026 (Day 1 of IAC)</p>
+                <p className="timeline-date">27 February 2026 (Day 1 of IAC)</p>
                 <p className="timeline-description">All registered participants present their initial pitches.</p>
               </div>
             </div>
@@ -398,7 +398,7 @@ const PitchYourIdea = () => {
               <div className="timeline-marker"></div>
               <div className="timeline-content">
                 <h3 className="timeline-title">Round 2 – Final Pitches</h3>
-                <p className="timeline-date">21 February 2026 (Day 2 of IAC)</p>
+                <p className="timeline-date">28 February 2026 (Day 2 of IAC)</p>
                 <p className="timeline-description">Finalists present detailed pitches with demos/prototypes.</p>
               </div>
             </div>
@@ -490,14 +490,14 @@ const PitchYourIdea = () => {
             Register now and take the first step towards turning your idea into reality.
           </p>
           <a 
-            href="mailto:cdc@iitram.ac.in?subject=Pitch Your Idea Registration - Udgam 2026" 
+            href="mailto:chair_cdc@iitram.ac.in?subject=Pitch Your Idea Registration - Udgam 2026" 
             className="cta-button"
           >
             Register Your Idea
           </a>
           <p className="cta-contact">
             For queries related to the competition, reach out to the CDC, IITRAM at{' '}
-            <a href="mailto:cdc@iitram.ac.in">cdc@iitram.ac.in</a>
+            <a href="mailto:chair_cdc@iitram.ac.in">chair_cdc@iitram.ac.in</a>
           </p>
         </div>
       </section>

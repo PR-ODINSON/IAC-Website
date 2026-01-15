@@ -69,12 +69,12 @@ const SchedulePage = () => {
           <div className="coming-soon-dates">
             <div className="date-box">
               <div className="date-label">Day 1</div>
-              <div className="date-value">20 Feb 2026</div>
+              <div className="date-value">27 Feb 2026</div>
             </div>
             <div className="date-divider">•</div>
             <div className="date-box">
               <div className="date-label">Day 2</div>
-              <div className="date-value">21 Feb 2026</div>
+              <div className="date-value">28 Feb 2026</div>
             </div>
           </div>
         </div>

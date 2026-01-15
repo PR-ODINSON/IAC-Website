@@ -81,7 +81,10 @@ const Navbar = () => {
           <div className="register-dropdown-container">
             <button 
               className="register-button"
-              onClick={() => setRegisterDropdownOpen(!registerDropdownOpen)}
+              onClick={() => {
+                setRegisterDropdownOpen(!registerDropdownOpen);
+                setMobileMenuOpen(false);
+              }}
               onKeyDown={handleRegisterButtonKeyDown}
               aria-expanded={registerDropdownOpen}
               aria-haspopup="true"
@@ -173,7 +176,10 @@ const Navbar = () => {
           </div>
           <button 
             className="menu-toggle"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            onClick={() => {
+              setMobileMenuOpen(!mobileMenuOpen);
+              setRegisterDropdownOpen(false);
+            }}
             onKeyDown={handleMenuToggleKeyDown}
             aria-expanded={mobileMenuOpen}
             aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}

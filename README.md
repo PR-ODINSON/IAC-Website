@@ -6,7 +6,7 @@ A production-ready, fully responsive multi-page website for the Industry–Acade
 
 - **Event**: Industry–Academia Conclave (IAC) 2026
 - **Theme**: "Bridging Innovation and Industry"
-- **Dates**: 23–24 January 2026
+- **Dates**: 27–28 February 2026
 - **Venue**: IITRAM, Ahmedabad
 - **Expected Participants**: ~250 students from engineering colleges across Gujarat
 
@@ -159,7 +159,7 @@ npm run preview
 - Time-based session layout
 - Session types: Inauguration, Keynote, Panel, Pitch, Technical Session, Networking
 
-**Day 1** (23 January 2026) - Innovation, Industry & Integration
+**Day 1** (27 February 2026) - Innovation, Industry & Integration
 - 09:00 - Inauguration & Welcome
 - 09:30 - Keynote: Industry 4.0
 - 11:00 - Sponsor Sessions
@@ -169,7 +169,7 @@ npm run preview
 - 16:00 - Student Project Expo
 - 17:00 - Day 1 Wrap-up
 
-**Day 2** (24 January 2026) - Entrepreneurship, Collaboration & Future Vision
+**Day 2** (28 February 2026) - Entrepreneurship, Collaboration & Future Vision
 - 09:00 - Keynote: Future of Innovation
 - 10:30 - HR Panel & Hiring Insights
 - 12:00 - Pitch Finals (10-15 finalists)
@@ -269,9 +269,9 @@ npm run preview
 **Timeline:**
 - Registration opens: TBA
 - Registration deadline: TBA
-- Round 1: 23 January 2026
+- Round 1: 27 February 2026
 - Finalists announcement: End of Day 1
-- Round 2: 24 January 2026
+- Round 2: 28 February 2026
 - Winners announcement: Closing ceremony
 
 **Prizes & Recognition:**
@@ -315,7 +315,7 @@ npm run preview
 ### Navigation & Layout
 - **Navbar**: Sticky header with 6 nav items (Home, Schedule, Students, Partners, Pitch Your Idea, Contact), mobile hamburger menu, active route highlighting
 - **Footer**: Quick links to all 6 pages, social links placeholder, copyright info
-- **Hero**: Event branding with live countdown timer to 23 Jan 2026
+- **Hero**: Event branding with live countdown timer to 27 Feb 2026
 
 ### Interactive Components
 - **Schedule**: Tab-based two-day schedule switcher
@@ -342,20 +342,20 @@ npm run preview
 ```html
 <!-- Basic Meta Tags -->
 <title>IAC 2026 - Industry–Academia Conclave | CDC, IITRAM</title>
-<meta name="description" content="Join IAC 2026, CDC IITRAM's flagship event bridging innovation and industry. Two days of keynotes, panel discussions, and networking. 23-24 January 2026, Ahmedabad." />
+<meta name="description" content="Join IAC 2026, CDC IITRAM's flagship event bridging innovation and industry. Two days of keynotes, panel discussions, and networking. 27-28 February 2026, Ahmedabad." />
 <meta name="keywords" content="IAC 2026, Industry Academia Conclave, IITRAM, CDC, Gujarat, Engineering Event, Startup Pitch, Career Development, Industry Networking, Innovation Summit" />
 
 <!-- Open Graph (Facebook, LinkedIn) -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://iac2026.iitram.ac.in/" />
 <meta property="og:title" content="IAC 2026 - Industry–Academia Conclave | CDC, IITRAM" />
-<meta property="og:description" content="Join IAC 2026. Two days of keynotes, panels, and networking. 23-24 January 2026, Ahmedabad." />
+<meta property="og:description" content="Join IAC 2026. Two days of keynotes, panels, and networking. 27-28 February 2026, Ahmedabad." />
 <meta property="og:image" content="https://iac2026.iitram.ac.in/og-image.jpg" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="IAC 2026 - Industry–Academia Conclave" />
-<meta name="twitter:description" content="Two days of innovation, networking, and career opportunities. 23-24 Jan 2026." />
+<meta name="twitter:description" content="Two days of innovation, networking, and career opportunities. 27-28 Feb 2026." />
 <meta name="twitter:image" content="https://iac2026.iitram.ac.in/twitter-image.jpg" />
 
 <!-- JSON-LD Structured Data -->
@@ -610,7 +610,7 @@ All pages feature:
 ## Content Overview
 
 ### Home Page
-- **Hero Section**: Event branding, dates (23-24 Jan 2026), venue (IITRAM, Ahmedabad), live countdown
+- **Hero Section**: Event branding, dates (27-28 Feb 2026), venue (IITRAM, Ahmedabad), live countdown
 - **About Section**: Event vision, 4 core objectives
 - **Highlights**: 6 key features (Keynote Talks, Panels, Pitch Competition, Project Expo, Corporate Stalls, Cultural Evening)
 - **Speakers Section**: 8 industry experts with session details
@@ -1014,7 +1014,7 @@ npm run dev
 - Food FAQ removed (not confirmed)
 
 ✅ **Countdown Timer**
-- Live countdown to 23 Jan 2026, 09:00 IST
+- Live countdown to 27 Feb 2026, 09:00 IST
 - Days:Hours:Minutes:Seconds display
 - Auto-updating every second
 - Integrated in Hero section
@@ -1098,4 +1098,4 @@ For technical support, feature requests, or bug reports:
 
 **Built with ❤️ for IAC 2026 | Career Development Centre, IITRAM**
 
-*Bridging Innovation and Industry | 23-24 January 2026, Ahmedabad*
+*Bridging Innovation and Industry | 27-28 February 2026, Ahmedabad*

@@ -17,7 +17,7 @@
 
 **Must Include:**
 - Event name: "Industry-Academia Conclave (IAC) 2026" or "Udgam 2026"
-- Date: "20-21 February 2026"
+- Date: "27-28 February 2026"
 - Venue: "IITRAM, Ahmedabad"
 - CDC IITRAM branding/logo
 - IITRAM logo
@@ -58,7 +58,7 @@
 │   INDUSTRY-ACADEMIA CONCLAVE (IAC)     │
 │              UDGAM 2026                │
 │                                         │
-│          20-21 February 2026           │
+│          27-28 February 2026           │
 │         IITRAM, Ahmedabad              │
 │                                         │
 │   [Background: Modern geometric         │

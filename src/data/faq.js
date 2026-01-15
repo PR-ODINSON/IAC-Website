@@ -27,7 +27,7 @@ export const faqData = [
   {
     id: 6,
     question: "What are the event dates and timings?",
-    answer: "Udgam 2026 will be held on February 20-21, 2026 at IITRAM, Ahmedabad. Day 1 runs from 9:00 AM to 5:00 PM and Day 2 from 9:00 AM to 4:00 PM. The detailed schedule is available on our Schedule page."
+    answer: "Udgam 2026 will be held on February 27-28, 2026 at IITRAM, Ahmedabad. Day 1 runs from 9:00 AM to 5:00 PM and Day 2 from 9:00 AM to 4:00 PM. The detailed schedule is available on our Schedule page."
   },
   {
     id: 7,
@@ -42,17 +42,17 @@ export const faqData = [
   {
     id: 9,
     question: "How can companies participate or sponsor the event?",
-    answer: "Companies can participate through various sponsorship packages (Platinum, Gold, Silver) or book corporate stalls. Please visit our Sponsorship page for detailed packages or contact us directly at cdc@iitram.ac.in for custom partnership opportunities."
+    answer: "Companies can participate through various sponsorship packages (Platinum, Gold, Silver) or book corporate stalls. Please visit our Sponsorship page for detailed packages or contact us directly at chair_cdc@iitram.ac.in for custom partnership opportunities."
   },
   {
     id: 10,
     question: "Can I participate in the 'Pitch Your Idea' competition?",
-    answer: "Yes! Students with innovative ideas or early-stage startups can register for the pitch competition. Round 1 will be on Day 1 (20 Feb), and finalists will present on Day 2 (21 Feb) in front of investors and startup founders. Prize pool includes cash awards and mentorship opportunities."
+    answer: "Yes! Students with innovative ideas or early-stage startups can register for the pitch competition. Round 1 will be on Day 1 (27 Feb), and finalists will present on Day 2 (28 Feb) in front of investors and startup founders. Prize pool includes cash awards and mentorship opportunities."
   },
   {
     id: 11,
     question: "How do I register for Udgam 2026?",
-    answer: "Udgam 2026 is invite-only. CDC IITRAM will distribute participation passes to select engineering colleges across Gujarat. Contact your college's placement cell or email cdc@iitram.ac.in to check if your institution is included in the invite list."
+    answer: "Udgam 2026 is invite-only. CDC IITRAM will distribute participation passes to select engineering colleges across Gujarat. Contact your college's placement cell or email chair_cdc@iitram.ac.in to check if your institution is included in the invite list."
   },
   {
     id: 12,

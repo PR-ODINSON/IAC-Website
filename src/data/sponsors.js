@@ -1,34 +1,28 @@
 export const stallPackages = [
   {
-    name: "Small Stall",
-    price: "₹799",
+    name: "Normal Stall",
+    price: "₹40,000",
     period: "One Day",
     features: [
-      "1 desk space",
-      "Company banner slot",
-      "Basic promotional materials"
-    ]
-  },
-  {
-    name: "Large Stall",
-    price: "₹999",
-    period: "One Day",
-    features: [
-      "1 desk space",
-      "Standee placement",
-      "Brochure distribution space",
-      "Enhanced visibility"
+      "Table",
+      "Chair",
+      "Spotlight",
+      "Plug point",
+      "Dust bin",
+      "Carpet"
     ]
   },
   {
     name: "Premium Stall",
-    price: "₹1,299",
+    price: "₹50,000",
     period: "One Day",
     features: [
-      "Larger booth space",
-      "10-minute company talk slot",
-      "Standee and banner placement",
-      "Priority positioning"
+      "Table",
+      "Chair",
+      "Spotlight",
+      "Plug point",
+      "Dust bin",
+      "Carpet"
     ],
     featured: true
   }
@@ -39,13 +33,13 @@ export const sponsorshipPackages = [
     tier: "Platinum Sponsor",
     price: "₹1,00,000",
     features: [
-      "Logo on main-stage backdrop",
+      "Logo on main stage",
       "Logo on inauguration banner",
-      "Logo on website and certificates",
-      "20-minute keynote session",
+      "Logo on website & certificates",
+      "20-min keynote",
       "5 VIP passes",
-      "Dedicated appreciation post",
-      "Felicitation during closing ceremony"
+      "Appreciation post",
+      "Closing ceremony felicitation"
     ],
     highlight: true
   },
@@ -53,23 +47,20 @@ export const sponsorshipPackages = [
     tier: "Gold Sponsor",
     price: "₹75,000",
     features: [
-      "Logo on event banners",
-      "Logo on event kits",
-      "10-minute session slot",
+      "Logo on banners & event kits",
+      "10-min session",
       "3 VIP passes",
-      "Brochure inserts in event kit",
-      "Certificate of appreciation"
+      "Brochure insert",
+      "Certificate"
     ]
   },
   {
     tier: "Silver Sponsor",
     price: "₹50,000",
     features: [
-      "Logo on posters",
-      "Logo on digital campaigns",
-      "Brochure inserts",
-      "Stage acknowledgements",
-      "Certificate of appreciation"
+      "Logo on posters & digital promotions",
+      "Brochure insert",
+      "Stage acknowledgement"
     ]
   }
 ];
