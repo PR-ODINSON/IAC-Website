@@ -4,7 +4,8 @@ export const stallPackages = [
     price: "₹40,000",
     period: "One Day",
     features: [
-      "Table",
+      "1 Desk",
+      "1 Standee",
       "Chair",
       "Spotlight",
       "Plug point",
@@ -17,7 +18,8 @@ export const stallPackages = [
     price: "₹50,000",
     period: "One Day",
     features: [
-      "Table",
+      "2 Desks",
+      "2 Standees",
       "Chair",
       "Spotlight",
       "Plug point",

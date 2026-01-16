@@ -76,7 +76,7 @@ const PitchYourIdea = () => {
           
           <div className="pitch-hero-actions">
             <a 
-              href="mailto:chair_cdc@iitram.ac.in?subject=Pitch Your Idea Registration - Udgam 2026" 
+              href="mailto:CDC_chair@iitram.ac.in?subject=Pitch Your Idea Registration - Udgam 2026" 
               className="pitch-cta-primary"
             >
               Register Your Idea
@@ -490,14 +490,14 @@ const PitchYourIdea = () => {
             Register now and take the first step towards turning your idea into reality.
           </p>
           <a 
-            href="mailto:chair_cdc@iitram.ac.in?subject=Pitch Your Idea Registration - Udgam 2026" 
+            href="mailto:CDC_chair@iitram.ac.in?subject=Pitch Your Idea Registration - Udgam 2026" 
             className="cta-button"
           >
             Register Your Idea
           </a>
           <p className="cta-contact">
             For queries related to the competition, reach out to the CDC, IITRAM at{' '}
-            <a href="mailto:chair_cdc@iitram.ac.in">chair_cdc@iitram.ac.in</a>
+            <a href="mailto:CDC_chair@iitram.ac.in">CDC_chair@iitram.ac.in</a>
           </p>
         </div>
       </section>

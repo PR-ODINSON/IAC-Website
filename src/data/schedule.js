@@ -24,12 +24,7 @@ export const scheduleData = {
         description: "Student startup pitches – shortlisting for finals"
       },
       {
-        time: "12:30 – 14:00",
-        title: "Lunch & Networking",
-        description: "Connect with industry leaders and peers"
-      },
-      {
-        time: "14:00 – 15:30",
+        time: "12:30 – 15:30",
         title: "Panel Discussion: The Rise of Smart Cities",
         description: "GIFT City as a Case Study"
       },
@@ -60,12 +55,7 @@ export const scheduleData = {
         description: "Industry presentations and Q&A"
       },
       {
-        time: "12:15 – 14:00",
-        title: "Lunch & Networking",
-        description: "Faculty, companies, and students connect"
-      },
-      {
-        time: "14:00 – 16:00",
+        time: "12:15 – 16:00",
         title: "Pitch Your Idea – Round 2 (Finals)",
         description: "Final pitches and winner announcement"
       },

@@ -36,26 +36,21 @@ export const faqData = [
   },
   {
     id: 8,
-    question: "Will food and refreshments be provided?",
-    answer: "Yes, lunch and tea/coffee will be provided to all registered participants on both days. Dietary preferences (vegetarian/non-vegetarian) can be indicated during registration."
+    question: "How can companies participate or sponsor the event?",
+    answer: "Companies can participate through various sponsorship packages (Platinum, Gold, Silver) or book corporate stalls. Please visit our Sponsorship page for detailed packages or contact us directly at CDC_chair@iitram.ac.in for custom partnership opportunities."
   },
   {
     id: 9,
-    question: "How can companies participate or sponsor the event?",
-    answer: "Companies can participate through various sponsorship packages (Platinum, Gold, Silver) or book corporate stalls. Please visit our Sponsorship page for detailed packages or contact us directly at chair_cdc@iitram.ac.in for custom partnership opportunities."
-  },
-  {
-    id: 10,
     question: "Can I participate in the 'Pitch Your Idea' competition?",
     answer: "Yes! Students with innovative ideas or early-stage startups can register for the pitch competition. Round 1 will be on Day 1 (27 Feb), and finalists will present on Day 2 (28 Feb) in front of investors and startup founders. Prize pool includes cash awards and mentorship opportunities."
   },
   {
-    id: 11,
+    id: 10,
     question: "How do I register for Udgam 2026?",
-    answer: "Udgam 2026 is invite-only. CDC IITRAM will distribute participation passes to select engineering colleges across Gujarat. Contact your college's placement cell or email chair_cdc@iitram.ac.in to check if your institution is included in the invite list."
+    answer: "Udgam 2026 is invite-only. CDC IITRAM will distribute participation passes to select engineering colleges across Gujarat. Contact your college's placement cell or email CDC_chair@iitram.ac.in to check if your institution is included in the invite list."
   },
   {
-    id: 12,
+    id: 11,
     question: "Will there be opportunities to interact with company representatives?",
     answer: "Yes! The event features dedicated networking sessions, company stalls, panel discussions, and one-on-one interaction opportunities. Students can network with 50+ companies and discuss internships, placements, and career guidance."
   },
