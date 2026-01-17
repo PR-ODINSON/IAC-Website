@@ -1,8 +1,35 @@
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import Countdown from './Countdown';
 import './Hero.css';
 
 const Hero = () => {
+  const [displayedText, setDisplayedText] = useState('');
+  const fullText = "CDC IITRAM's premier event bringing together students, academia, and industry leaders through keynotes, panel discussions, and networking opportunities. Join us for two days of innovation, collaboration, and career development.";
+  
+  useEffect(() => {
+    let currentIndex = 0;
+    // Faster typing on mobile devices for better UX
+    const isMobile = window.innerWidth <= 768;
+    const typingSpeed = isMobile ? 20 : 30; // milliseconds per character
+    const startDelay = isMobile ? 1000 : 1500; // shorter delay on mobile
+    
+    const timeoutId = setTimeout(() => {
+      const intervalId = setInterval(() => {
+        if (currentIndex <= fullText.length) {
+          setDisplayedText(fullText.slice(0, currentIndex));
+          currentIndex++;
+        } else {
+          clearInterval(intervalId);
+        }
+      }, typingSpeed);
+      
+      return () => clearInterval(intervalId);
+    }, startDelay);
+    
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   return (
     <section className="hero">
       <div className="hero-container">
@@ -20,10 +47,9 @@ const Hero = () => {
             Bridging Innovation and Industry
           </p>
           
-          <p className="hero-description">
-            CDC IITRAM's premier event bringing together students, academia, and industry leaders 
-            through keynotes, panel discussions, and networking opportunities. 
-            Join us for two days of innovation, collaboration, and career development.
+          <p className="hero-description hero-description-animated">
+            {displayedText}
+            <span className="typing-cursor"></span>
           </p>
 
           <Countdown />
