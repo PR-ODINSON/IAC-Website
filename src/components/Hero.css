@@ -55,8 +55,19 @@
   border-radius: 20px;
   margin-bottom: 24px;
   letter-spacing: 0.02em;
-  animation: pulse 2s ease-in-out infinite;
+  animation: pulse 2s ease-in-out infinite, fadeInScale 0.6s ease-out;
   box-shadow: 0 4px 12px rgba(20, 184, 166, 0.1);
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 
 @keyframes pulse {
@@ -75,18 +86,71 @@
   font-size: 56px;
   font-weight: 700;
   line-height: 1.1;
-  color: #0f172a;
   margin: 0 0 16px 0;
   letter-spacing: -0.03em;
+  background: linear-gradient(
+    90deg,
+    #0f172a 0%,
+    #14b8a6 25%,
+    #2dd4bf 50%,
+    #14b8a6 75%,
+    #0f172a 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: textShine 4s ease-in-out infinite, slideInLeft 0.8s ease-out;
+  position: relative;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .hero-year {
   display: block;
-  background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%);
+  background: linear-gradient(
+    135deg,
+    #14b8a6 0%,
+    #2dd4bf 50%,
+    #14b8a6 100%
+  );
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-top: 8px;
+  animation: gradientFlow 3s ease-in-out infinite;
+  filter: drop-shadow(0 2px 8px rgba(20, 184, 166, 0.3));
+}
+
+@keyframes gradientFlow {
+  0%, 100% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
 }
 
 .hero-subtitle {
@@ -96,6 +160,54 @@
   color: #475569;
   margin: 0 0 20px 0;
   font-style: italic;
+  position: relative;
+  display: inline-block;
+  animation: slideInRight 0.8s ease-out 0.3s backwards;
+}
+
+.hero-subtitle::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #14b8a6, #2dd4bf, #14b8a6);
+  background-size: 200% auto;
+  border-radius: 2px;
+  animation: underlineGlow 3s ease-in-out infinite, underlineDraw 1s ease-out 0.5s backwards;
+  box-shadow: 0 0 10px rgba(20, 184, 166, 0.3);
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes underlineDraw {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes underlineGlow {
+  0%, 100% {
+    background-position: 0% center;
+    box-shadow: 0 0 10px rgba(20, 184, 166, 0.3);
+  }
+  50% {
+    background-position: 100% center;
+    box-shadow: 0 0 20px rgba(20, 184, 166, 0.5);
+  }
 }
 
 .hero-description {
@@ -103,6 +215,7 @@
   line-height: 1.7;
   color: #475569;
   margin: 0 0 32px 0;
+  animation: fadeInUp 0.8s ease-out 0.6s backwards;
 }
 
 .hero-meta {
