@@ -1,10 +1,19 @@
 import Schedule from '../components/Schedule';
 import usePageTitle from '../hooks/usePageTitle';
+import { useSEO } from '../utils/seo';
 import './SchedulePage.css';
 
 const SchedulePage = () => {
   usePageTitle('Event Schedule');
-  
+
+  // SEO: Schedule page meta tags
+  useSEO({
+    title: 'Event Schedule - Udgam 2026 | CDC IITRAM',
+    description: 'View the complete 2-day schedule for Udgam 2026. Keynote sessions, panel discussions, pitch competitions, networking events, and innovation showcases on Feb 27-28, 2026 at IITRAM Ahmedabad.',
+    keywords: 'udgam schedule, event agenda iitram, udgam 2026 program, conference schedule ahmedabad',
+    image: 'https://udgam.iitram.ac.in/iac-2026-cover.png'
+  });
+
   return (
     <div className="schedule-page">
       <div className="page-hero">
@@ -15,7 +24,7 @@ const SchedulePage = () => {
           </p>
         </div>
       </div>
-      
+
       <div className="coming-soon-section">
         <div className="coming-soon-container">
           <div className="coming-soon-icon">
@@ -26,14 +35,14 @@ const SchedulePage = () => {
               <line x1="3" y1="10" x2="21" y2="10"></line>
             </svg>
           </div>
-          
+
           <h2 className="coming-soon-title">Schedule Coming Soon</h2>
           <p className="coming-soon-description">
-            We're crafting an exceptional two-day program filled with inspiring keynotes, 
-            insightful panel discussions, networking sessions, and innovation showcases. 
+            We're crafting an exceptional two-day program filled with inspiring keynotes,
+            insightful panel discussions, networking sessions, and innovation showcases.
             Stay tuned for the detailed schedule!
           </p>
-          
+
           <div className="coming-soon-features">
             <div className="feature-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -65,7 +74,7 @@ const SchedulePage = () => {
               <span>Innovation Showcase</span>
             </div>
           </div>
-          
+
           <div className="coming-soon-dates">
             <div className="date-box">
               <div className="date-label">Day 1</div>

@@ -112,7 +112,7 @@ const Navbar = () => {
                     <h3 id="dropdown-title">What are you interested in?</h3>
                   </div>
                   <a 
-                    href="https://forms.gle/SoAjwWNzQzCJWLgs6" 
+                    href="https://forms.gle/hLu8HJxTB27pVaHr5" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="dropdown-item"

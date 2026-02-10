@@ -3,24 +3,49 @@ import About from '../components/About';
 import Highlights from '../components/Highlights';
 import { Link } from 'react-router-dom';
 import usePageTitle from '../hooks/usePageTitle';
+import { useSEO, useStructuredData, generateEventSchema, generateOrganizationSchema } from '../utils/seo';
 import './Home.css';
 
 const Home = () => {
   usePageTitle('');
-  
+
+  // SEO: Dynamic meta tags for home page
+  useSEO({
+    title: 'Udgam 2026 - Industry–Academia Conclave (IAC) | CDC IITRAM',
+    description: 'Udgam 2026 is CDC IITRAM\'s flagship Industry-Academia Conclave. Join us Feb 27-28, 2026 for keynotes, panel discussions, ₹40,000 pitch competition, and networking with industry leaders.',
+    keywords: 'Udgam, Udgam 2026, Udgam IITRAM, IAC IITRAM, Industry Academia Conclave, Engineering Event Ahmedabad, Student Competition Gujarat',
+    image: 'https://udgam.iitram.ac.in/iac-2026-cover.png',
+    type: 'website'
+  });
+
+  // SEO: Add structured data for rich results in Google
+  useStructuredData({
+    "@context": "https://schema.org",
+    "@graph": [
+      generateEventSchema(),
+      generateOrganizationSchema(),
+      {
+        "@type": "WebSite",
+        "name": "Udgam 2026",
+        "alternateName": "IAC IITRAM 2026",
+        "url": "https://udgam.iitram.ac.in"
+      }
+    ]
+  });
+
   return (
     <main id="main-content" className="home-page">
       <Hero />
       <About />
       <Highlights />
-      
+
       {/* Quick Links Section */}
       <section className="quick-links-section">
         <div className="quick-links-container">
           <div className="section-label">Navigate</div>
           <h2 className="quick-links-title">Explore the Event</h2>
           <p className="quick-links-description">
-            Discover everything about the event — from schedules and speakers to participation opportunities and sponsorship details.
+            Discover everything about the event, from schedules and speakers to participation opportunities and sponsorship details.
           </p>
           <div className="quick-links-grid">
             <Link to="/schedule" className="quick-link-card">

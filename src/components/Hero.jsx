@@ -1,19 +1,20 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Countdown from './Countdown';
+import AddToCalendar from './AddToCalendar';
 import './Hero.css';
 
 const Hero = () => {
   const [displayedText, setDisplayedText] = useState('');
   const fullText = "CDC IITRAM's premier event bringing together students, academia, and industry leaders through keynotes, panel discussions, and networking opportunities. Join us for two days of innovation, collaboration, and career development.";
-  
+
   useEffect(() => {
     let currentIndex = 0;
     // Faster typing on mobile devices for better UX
     const isMobile = window.innerWidth <= 768;
     const typingSpeed = isMobile ? 20 : 30; // milliseconds per character
     const startDelay = isMobile ? 1000 : 1500; // shorter delay on mobile
-    
+
     const timeoutId = setTimeout(() => {
       const intervalId = setInterval(() => {
         if (currentIndex <= fullText.length) {
@@ -23,10 +24,10 @@ const Hero = () => {
           clearInterval(intervalId);
         }
       }, typingSpeed);
-      
+
       return () => clearInterval(intervalId);
     }, startDelay);
-    
+
     return () => clearTimeout(timeoutId);
   }, []);
 
@@ -37,29 +38,29 @@ const Hero = () => {
           <div className="hero-badge">
             Flagship Event by CDC, IITRAM
           </div>
-          
+
           <h1 className="hero-title">
             Udgam
             <span className="hero-year">2026</span>
           </h1>
-          
+
           <p className="hero-subtitle">
             Bridging Innovation and Industry
           </p>
-          
+
           <p className="hero-description hero-description-animated">
             {displayedText}
             <span className="typing-cursor"></span>
           </p>
 
           <Countdown />
-          
+
           <div className="hero-meta">
             <div className="meta-item">
-              <svg 
-                className="meta-icon" 
-                viewBox="0 0 24 24" 
-                fill="none" 
+              <svg
+                className="meta-icon"
+                viewBox="0 0 24 24"
+                fill="none"
                 stroke="currentColor"
                 role="img"
                 aria-label="Event dates"
@@ -69,10 +70,10 @@ const Hero = () => {
               <span>27–28 February 2026</span>
             </div>
             <div className="meta-item">
-              <svg 
-                className="meta-icon" 
-                viewBox="0 0 24 24" 
-                fill="none" 
+              <svg
+                className="meta-icon"
+                viewBox="0 0 24 24"
+                fill="none"
                 stroke="currentColor"
                 role="img"
                 aria-label="Event location"
@@ -84,9 +85,18 @@ const Hero = () => {
             </div>
           </div>
 
+          {/* SEO: Improved CTAs with internal linking and calendar integration */}
           <div className="hero-actions">
-            <a 
-              href="#about" 
+            <Link
+              to="/students"
+              className="btn-primary"
+              aria-label="Register for Udgam 2026"
+            >
+              Register Now
+            </Link>
+            <AddToCalendar variant="secondary" />
+            <a
+              href="#about"
               className="btn-secondary"
               aria-label="Learn more about Udgam 2026"
             >
@@ -101,13 +111,13 @@ const Hero = () => {
             <div className="stat-label">Days of Innovation</div>
             <div className="stat-detail">Keynotes · Panels · Discussions</div>
           </div>
-          
+
           <div className="stat-card">
             <div className="stat-number">15+</div>
             <div className="stat-label">Industry Speakers</div>
             <div className="stat-detail">Experts · Mentors · Innovators</div>
           </div>
-          
+
           <div className="stat-card stat-card-highlight">
             <div className="stat-number">∞</div>
             <div className="stat-label">Opportunities</div>

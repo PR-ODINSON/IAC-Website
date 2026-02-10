@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import './Countdown.css';
 
 const Countdown = () => {
-  // Countdown calculates days remaining automatically — no static numbers.
+  // Countdown calculates days remaining automatically. No static numbers.
   const targetDate = new Date('2026-02-27T09:00:00+05:30').getTime();
-  
+
   const calculateTimeLeft = () => {
     const now = new Date().getTime();
     const difference = targetDate - now;

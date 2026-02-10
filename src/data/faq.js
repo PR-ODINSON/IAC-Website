@@ -7,12 +7,12 @@ export const faqData = [
   {
     id: 2,
     question: "Is there any registration fee for students?",
-    answer: "No, participation in Udgam 2026 is completely FREE for all students. However, registration is mandatory and seats are limited on a first-come, first-served basis."
+    answer: "Yes, There is a basic Registration fee of ₹50 per student to cover event logistics and materials. However, there is no registration fees for company representatives."
   },
   {
     id: 3,
     question: "Will accommodation be provided for outstation students?",
-    answer: "No, we are not providing accommodation facilities for this event. However, we can provide recommendations for nearby hotels and affordable lodging options in Ahmedabad for outstation participants."
+    answer: "Yes, we are providing accommodation facilities for this event. However, it is chargeable."
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const faqData = [
   {
     id: 8,
     question: "How can companies participate or sponsor the event?",
-    answer: "Companies can participate through various sponsorship packages (Platinum, Gold, Silver) or book corporate stalls. Please visit our Sponsorship page for detailed packages or contact us directly at CDC_chair@iitram.ac.in for custom partnership opportunities."
+    answer: "Companies can participate through various sponsorship packages (Platinum, Gold, Silver) or book corporate stalls. Please visit our Sponsorship page for detailed packages or contact us directly at placement@iitram.ac.in for custom partnership opportunities."
   },
   {
     id: 9,
@@ -47,7 +47,7 @@ export const faqData = [
   {
     id: 10,
     question: "How do I register for Udgam 2026?",
-    answer: "Udgam 2026 is invite-only. CDC IITRAM will distribute participation passes to select engineering colleges across Gujarat. Contact your college's placement cell or email CDC_chair@iitram.ac.in to check if your institution is included in the invite list."
+    answer: "Udgam 2026 is invite-only. CDC IITRAM will distribute participation passes to select engineering colleges across Gujarat. Contact your college's placement cell or email at placement@iitram.ac.in to check if your institution is included in the invite list."
   },
   {
     id: 11,
@@ -78,10 +78,5 @@ export const faqData = [
     id: 17,
     question: "Can I attend only one day of the event?",
     answer: "While both days offer unique sessions and opportunities, you can register for individual days based on your schedule. However, we highly recommend attending both days for the complete experience, and participation certificates will only be issued to those attending both days."
-  },
-  {
-    id: 18,
-    question: "What is the dress code for the event?",
-    answer: "The dress code is smart casual or business casual. We recommend formal or semi-formal attire as you'll be interacting with industry professionals and company representatives. First impressions matter!"
   }
 ];

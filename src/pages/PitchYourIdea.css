@@ -626,45 +626,241 @@
   background: white;
 }
 
+.prizes-intro {
+  font-size: 1.125rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 48px;
+  max-width: 800px;
+}
+
 .prizes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+  margin-bottom: 64px;
+}
+
+.prizes-grid-two {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .prize-card {
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  border-radius: 12px;
-  padding: 32px;
+  border: 2px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  padding: 40px 32px;
   text-align: center;
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.prize-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #14b8a6 0%, #2dd4bf 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.prize-card:hover::before {
+  transform: scaleX(1);
 }
 
 .prize-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(20, 184, 166, 0.1);
-  border-color: rgba(20, 184, 166, 0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(20, 184, 166, 0.15);
+  border-color: rgba(20, 184, 166, 0.3);
+}
+
+.prize-card-first {
+  border-color: rgba(251, 191, 36, 0.3);
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+}
+
+.prize-card-first::before {
+  background: linear-gradient(90deg, #f59e0b 0%, #fbbf24 100%);
+}
+
+.prize-card-first:hover {
+  border-color: rgba(251, 191, 36, 0.5);
+  box-shadow: 0 16px 48px rgba(251, 191, 36, 0.2);
+}
+
+.prize-card-second {
+  border-color: rgba(148, 163, 184, 0.3);
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.prize-card-second::before {
+  background: linear-gradient(90deg, #64748b 0%, #94a3b8 100%);
+}
+
+.prize-card-second:hover {
+  border-color: rgba(148, 163, 184, 0.5);
+  box-shadow: 0 16px 48px rgba(148, 163, 184, 0.2);
+}
+
+.prize-card-third {
+  border-color: rgba(205, 127, 50, 0.3);
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+}
+
+.prize-card-third::before {
+  background: linear-gradient(90deg, #cd7f32 0%, #d4a574 100%);
+}
+
+.prize-card-third:hover {
+  border-color: rgba(205, 127, 50, 0.5);
+  box-shadow: 0 16px 48px rgba(205, 127, 50, 0.2);
+}
+
+.prize-rank {
+  display: inline-block;
+  background: rgba(20, 184, 166, 0.15);
+  color: #14b8a6;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.prize-card-first .prize-rank {
+  background: rgba(251, 191, 36, 0.2);
+  color: #d97706;
+}
+
+.prize-card-second .prize-rank {
+  background: rgba(148, 163, 184, 0.2);
+  color: #475569;
+}
+
+.prize-card-third .prize-rank {
+  background: rgba(205, 127, 50, 0.2);
+  color: #92400e;
 }
 
 .prize-icon {
-  width: 48px;
-  height: 48px;
-  margin: 0 auto 20px;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 24px;
   color: #14b8a6;
   stroke-width: 1.5;
 }
 
-.prize-card h3 {
+.prize-card-first .prize-icon {
+  color: #f59e0b;
+}
+
+.prize-card-second .prize-icon {
+  color: #64748b;
+}
+
+.prize-card-third .prize-icon {
+  color: #cd7f32;
+}
+
+.prize-amount {
   font-family: 'Sora', sans-serif;
-  font-size: 1.125rem;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 700;
   color: #0f172a;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.prize-card-first .prize-amount {
+  background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.prize-card-second .prize-amount {
+  background: linear-gradient(135deg, #64748b 0%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.prize-card-third .prize-amount {
+  background: linear-gradient(135deg, #cd7f32 0%, #d4a574 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .prize-card p {
   color: #64748b;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.additional-benefits {
+  background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+  border: 2px solid rgba(20, 184, 166, 0.2);
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.additional-benefits h3 {
+  font-family: 'Sora', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(20, 184, 166, 0.1);
+  transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+  border-color: rgba(20, 184, 166, 0.3);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.1);
+  transform: translateX(4px);
+}
+
+.benefit-icon {
+  width: 24px;
+  height: 24px;
+  color: #14b8a6;
+  flex-shrink: 0;
+  stroke-width: 2.5;
+  margin-top: 2px;
+}
+
+.benefit-item span {
+  color: #475569;
   line-height: 1.6;
   font-size: 0.95rem;
 }
@@ -777,8 +973,8 @@
   opacity: 0;
   visibility: hidden;
   transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-              padding 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-              opacity 0.3s ease;
+    padding 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s ease;
 }
 
 .faq-item[open] .faq-answer {
@@ -794,6 +990,7 @@
     opacity: 0;
     transform: translateY(-8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -868,6 +1065,7 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+
   .rounds-container,
   .deliverables-grid {
     grid-template-columns: 1fr;
@@ -909,6 +1107,14 @@
 
   .prizes-grid {
     grid-template-columns: 1fr;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prize-amount {
+    font-size: 2rem;
   }
 }
 
@@ -1011,6 +1217,21 @@
     width: 22px;
     height: 22px;
   }
+
+  .prize-amount {
+    font-size: 1.75rem;
+  }
+
+  .additional-benefits {
+    padding: 28px 20px;
+  }
+
+  .additional-benefits h3 {
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+  }
+
+  .benefit-item {
+    padding: 16px;
+  }
 }
-
-
