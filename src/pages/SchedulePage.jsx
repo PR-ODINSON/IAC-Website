@@ -11,7 +11,7 @@ const SchedulePage = () => {
     title: 'Event Schedule - Udgam 2026 | CDC IITRAM',
     description: 'View the complete 2-day schedule for Udgam 2026. Keynote sessions, panel discussions, pitch competitions, networking events, and innovation showcases on Feb 27-28, 2026 at IITRAM Ahmedabad.',
     keywords: 'udgam schedule, event agenda iitram, udgam 2026 program, conference schedule ahmedabad',
-    image: 'https://udgam.iitram.ac.in/iac-2026-cover.png'
+    image: 'https://udgam-iac.iitram.in/iac-2026-cover.png'
   });
 
   return (

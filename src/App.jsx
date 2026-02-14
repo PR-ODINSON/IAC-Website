@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Toast from './components/Toast';
+import SEO from './components/SEO';
 import Home from './pages/Home';
 import SchedulePage from './pages/SchedulePage';
 import SpeakersPage from './pages/SpeakersPage';
@@ -18,6 +19,7 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <SEO />
         <a href="#main-content" className="skip-to-content">Skip to content</a>
         <Toast />
         <Navbar />

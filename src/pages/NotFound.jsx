@@ -1,7 +1,28 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import './NotFound.css';
 
 const NotFound = () => {
+  // SEO CRITICAL: Prevent indexing of 404 pages
+  useEffect(() => {
+    // Set noindex for 404 pages
+    let robotsMeta = document.querySelector('meta[name="robots"]');
+    if (!robotsMeta) {
+      robotsMeta = document.createElement('meta');
+      robotsMeta.setAttribute('name', 'robots');
+      document.head.appendChild(robotsMeta);
+    }
+    robotsMeta.setAttribute('content', 'noindex, nofollow');
+
+    // Update title
+    document.title = '404 - Page Not Found | Udgam 2026';
+
+    // Cleanup: restore indexing when leaving 404 page
+    return () => {
+      robotsMeta.setAttribute('content', 'index, follow, max-image-preview:large');
+    };
+  }, []);
+
   return (
     <div className="not-found-page">
       <div className="not-found-container">

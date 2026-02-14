@@ -1,31 +1,40 @@
 import CompanyBenefits from '../components/CompanyBenefits';
 import StallsAndSponsors from '../components/StallsAndSponsors';
 import usePageTitle from '../hooks/usePageTitle';
+import { useSEO } from '../utils/seo';
 import './CompaniesPage.css';
 
 const CompaniesPage = () => {
   usePageTitle('For Companies');
-  
+
+  // SEO CRITICAL: Page-specific canonical and meta tags
+  useSEO({
+    title: 'For Companies - Partnership Opportunities | Udgam 2026',
+    description: 'Connect with talented engineering students at Udgam 2026. Book corporate stalls, enhance brand visibility, and recruit future talent at IITRAM\'s flagship Industry-Academia Conclave.',
+    keywords: 'corporate stalls udgam, company partnerships iitram, recruitment event ahmedabad, engineering talent gujarat',
+    image: 'https://udgam-iac.iitram.in/iac-2026-cover.png'
+  });
+
   return (
     <div className="companies-page">
       <div className="page-hero">
         <div className="page-hero-container">
           <h1 className="page-hero-title">For Companies</h1>
           <p className="page-hero-description">
-            Connect with talented engineering students, enhance brand visibility, and contribute 
+            Connect with talented engineering students, enhance brand visibility, and contribute
             to building the future workforce through strategic partnerships at Udgam 2026.
           </p>
         </div>
       </div>
       <CompanyBenefits />
       <StallsAndSponsors showSponsorship={false} showCTA={false} />
-      
+
       <section className="interest-form-section">
         <div className="interest-form-container">
           <div className="form-header">
             <h2 className="form-title">Interested in Booking a Stall?</h2>
             <p className="form-description">
-              Want to set up a corporate stall at Udgam 2026? Express your interest below and 
+              Want to set up a corporate stall at Udgam 2026? Express your interest below and
               our team will reach out to you with available slots, pricing, and booking details.
             </p>
           </div>

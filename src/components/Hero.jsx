@@ -40,7 +40,7 @@ const Hero = () => {
           </div>
 
           <h1 className="hero-title">
-            Udgam
+            Udgam<sup className="hero-iac">IAC</sup>
             <span className="hero-year">2026</span>
           </h1>
 

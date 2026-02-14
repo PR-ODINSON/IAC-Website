@@ -10,7 +10,7 @@ const PitchYourIdea = () => {
     title: 'Pitch Your Idea Competition - ₹40,000 Prize Pool | Udgam 2026',
     description: 'Compete in Udgam 2026 Pitch Competition with ₹40,000 prize pool. Present your innovation to iCreate and SSIP jury. Open to all domains - tech, healthcare, education, agriculture & more.',
     keywords: 'pitch competition udgam, startup competition iitram, innovation contest gujarat, student pitch event, icreate ssip jury, 40000 prize pool',
-    image: 'https://udgam.iitram.ac.in/iac-2026-cover.png'
+    image: 'https://udgam-iac.iitram.in/iac-2026-cover.png'
   });
 
   // SEO: Competition structured data for rich results
@@ -19,7 +19,7 @@ const PitchYourIdea = () => {
     "@type": "Competition",
     "name": "Pitch Your Idea - Udgam 2026",
     "description": "Student pitch competition with ₹40,000 prize pool judged by iCreate and SSIP experts",
-    "url": "https://udgam.iitram.ac.in/pitch-your-idea",
+    "url": "https://udgam-iac.iitram.in/pitch-your-idea",
     "startDate": "2026-02-27",
     "endDate": "2026-02-28",
     "location": {

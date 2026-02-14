@@ -11,7 +11,7 @@ const StudentsPage = () => {
     title: 'For Students - Udgam 2026 | CDC IITRAM',
     description: 'Join Udgam 2026 for industry exposure, skill development, networking with leaders, and pitch competitions. Register now for ₹50 and unlock career opportunities at IITRAM Ahmedabad.',
     keywords: 'student registration udgam, engineering students event, career development iitram, student networking ahmedabad, pitch competition students',
-    image: 'https://udgam.iitram.ac.in/iac-2026-cover.png'
+    image: 'https://udgam-iac.iitram.in/iac-2026-cover.png'
   });
 
   // SEO: Structured data for student registration
@@ -20,13 +20,13 @@ const StudentsPage = () => {
     "@type": "EducationalEvent",
     "name": "Udgam 2026 - For Students",
     "description": "Student-focused sessions, workshops, and networking opportunities at Udgam 2026",
-    "url": "https://udgam.iitram.ac.in/students",
+    "url": "https://udgam-iac.iitram.in/students",
     "isAccessibleForFree": false,
     "offers": {
       "@type": "Offer",
       "price": "50",
       "priceCurrency": "INR",
-      "url": "https://udgam.iitram.ac.in/students"
+      "url": "https://udgam-iac.iitram.in/students"
     }
   });
 

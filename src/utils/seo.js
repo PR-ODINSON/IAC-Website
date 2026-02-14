@@ -35,27 +35,26 @@ export const useSEO = ({ title, description, keywords, image, type = 'website' }
         updateMetaTag('description', description);
         if (keywords) updateMetaTag('keywords', keywords);
 
+        // SEO CRITICAL: Ensure robots meta tag is always set to index, follow
+        updateMetaTag('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+
+
+
         // Open Graph tags for social sharing
-        const fullUrl = `https://udgam.iitram.ac.in${location.pathname}`;
+        const currentUrl = `https://udgam-iac.iitram.in${location.pathname}`;
         updateMetaTag('og:title', title, true);
         updateMetaTag('og:description', description, true);
-        updateMetaTag('og:url', fullUrl, true);
+        updateMetaTag('og:url', currentUrl, true);
         updateMetaTag('og:type', type, true);
         if (image) updateMetaTag('og:image', image, true);
 
         // Twitter Card tags
         updateMetaTag('twitter:title', title, true);
         updateMetaTag('twitter:description', description, true);
+        updateMetaTag('twitter:url', currentUrl, true);
         if (image) updateMetaTag('twitter:image', image, true);
 
-        // Canonical URL
-        let canonical = document.querySelector('link[rel="canonical"]');
-        if (!canonical) {
-            canonical = document.createElement('link');
-            canonical.setAttribute('rel', 'canonical');
-            document.head.appendChild(canonical);
-        }
-        canonical.setAttribute('href', fullUrl);
+
 
     }, [title, description, keywords, image, type, location.pathname]);
 };
@@ -94,6 +93,7 @@ export const useStructuredData = (data) => {
 export const generateEventSchema = () => ({
     "@context": "https://schema.org",
     "@type": "Event",
+    "@id": "https://udgam-iac.iitram.in/#event",
     "name": "Udgam 2026 - Industry–Academia Conclave",
     "alternateName": ["Udgam", "Udgam IITRAM", "IAC 2026", "IAC IITRAM"],
     "description": "Udgam 2026 is CDC IITRAM's flagship Industry-Academia Conclave featuring keynotes, panel discussions, pitch competitions with ₹40,000 prize pool, and networking with industry leaders from iCreate and SSIP.",
@@ -119,18 +119,15 @@ export const generateEventSchema = () => ({
         }
     },
     "image": [
-        "https://udgam.iitram.ac.in/iac-2026-cover.png",
-        "https://udgam.iitram.ac.in/logo.png"
+        "https://udgam-iac.iitram.in/iac-2026-cover.png",
+        "https://udgam-iac.iitram.in/logo.png"
     ],
     "organizer": {
-        "@type": "Organization",
-        "name": "Career Development Centre (CDC), IITRAM",
-        "url": "https://iitram.ac.in",
-        "logo": "https://udgam.iitram.ac.in/logo.png"
+        "@id": "https://udgam-iac.iitram.in/#organization"
     },
     "offers": {
         "@type": "Offer",
-        "url": "https://udgam.iitram.ac.in/students",
+        "url": "https://udgam-iac.iitram.in/students",
         "price": "50",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
@@ -140,7 +137,7 @@ export const generateEventSchema = () => ({
         "@type": "PerformingGroup",
         "name": "Industry Leaders and Academic Experts"
     },
-    "url": "https://udgam.iitram.ac.in"
+    "url": "https://udgam-iac.iitram.in"
 });
 
 /**
@@ -149,10 +146,11 @@ export const generateEventSchema = () => ({
 export const generateOrganizationSchema = () => ({
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://udgam-iac.iitram.in/#organization",
     "name": "Career Development Centre (CDC), IITRAM",
     "alternateName": "CDC IITRAM",
-    "url": "https://udgam.iitram.ac.in",
-    "logo": "https://udgam.iitram.ac.in/logo.png",
+    "url": "https://udgam-iac.iitram.in",
+    "logo": "https://udgam-iac.iitram.in/logo.png",
     "description": "Career Development Centre at Institute of Infrastructure Technology Research and Management",
     "address": {
         "@type": "PostalAddress",
@@ -185,7 +183,7 @@ export const generateGoogleCalendarLink = () => {
     const event = {
         text: 'Udgam 2026 - Industry–Academia Conclave',
         dates: '20260227T090000/20260228T183000',
-        details: 'Join Udgam 2026 at IITRAM for keynotes, panel discussions, pitch competitions, and networking. Register at https://udgam.iitram.ac.in/students',
+        details: 'Join Udgam 2026 at IITRAM for keynotes, panel discussions, pitch competitions, and networking. Register at https://udgam-iac.iitram.in/students',
         location: 'IITRAM Campus, Ahmedabad, Gujarat 380026',
         ctz: 'Asia/Kolkata'
     };

@@ -3,9 +3,29 @@
   publish = "dist"
 
 [[redirects]]
+  from = "https://udgam.iitram.in/*"
+  to = "https://udgam-iac.iitram.in/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://udgam.iitram.in/*"
+  to = "https://udgam-iac.iitram.in/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "index, follow"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
 
 [build.environment]
   NODE_VERSION = "18"

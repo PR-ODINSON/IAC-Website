@@ -3,7 +3,13 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/jpeg" href="/iitram_logo_only.jpg" />
+
+  <!-- Favicon - Multiple sizes for better compatibility -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
+  <link rel="shortcut icon" href="/logo.png" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Primary Meta Tags -->
@@ -14,7 +20,7 @@
   <meta name="keywords"
     content="Udgam, Udgam 2026, Udgam IITRAM, IAC IITRAM, Industry Academia Conclave, IITRAM, CDC IITRAM, Engineering Event Ahmedabad, Innovation Event Gujarat, Entrepreneurship, Career Development, Student Competition, Pitch Your Idea, iCreate, SSIP, Gujarat Engineering Event" />
   <meta name="author" content="Career Development Centre (CDC), IITRAM" />
-  <link rel="canonical" href="https://udgam.iitram.ac.in/" />
+
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow" />
   <meta name="language" content="English" />
@@ -23,29 +29,32 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://udgam.iitram.ac.in/" />
+  <meta property="og:url" content="https://udgam-iac.iitram.in/" />
   <meta property="og:title" content="Udgam 2026 - Industry–Academia Conclave (IAC) | CDC IITRAM" />
   <meta property="og:description"
     content="Udgam 2026 is CDC IITRAM's flagship Industry-Academia Conclave. Join us for keynotes, panel discussions, pitch competitions, and networking. 27-28 February 2026, Ahmedabad." />
-  <meta property="og:image" content="https://udgam.iitram.ac.in/iac-2026-cover.png" />
+  <meta property="og:image" content="https://udgam-iac.iitram.in/iac-2026-cover.png" />
   <meta property="og:site_name" content="Udgam 2026 - IAC IITRAM" />
   <meta property="og:locale" content="en_IN" />
 
-  <!-- Twitter -->
+  <!-- Twitter Card Tags - SEO CRITICAL: Must use correct domain -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://iac2026.iitram.ac.in/" />
-  <meta property="twitter:title" content="IAC 2026 - Industry–Academia Conclave | CDC IITRAM" />
+  <meta property="twitter:url" content="https://udgam-iac.iitram.in/" />
+  <meta property="twitter:title" content="Udgam 2026 - Industry–Academia Conclave (IAC) | CDC IITRAM" />
   <meta property="twitter:description"
-    content="Join IAC 2026, CDC IITRAM's flagship event bridging innovation and industry. 27-28 February 2026, Ahmedabad." />
-  <meta property="twitter:image" content="/iac-2026-cover.png" />
+    content="Udgam 2026 is CDC IITRAM's flagship Industry-Academia Conclave. Join us for keynotes, panel discussions, pitch competitions, and networking. 27-28 February 2026, Ahmedabad." />
+  <meta property="twitter:image" content="https://udgam-iac.iitram.in/iac-2026-cover.png" />
 
-  <!-- Structured Data (JSON-LD) -->
+  <!-- Structured Data (JSON-LD) - SEO CRITICAL: Event Schema for Google Rich Results -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Event",
-      "name": "Industry–Academia Conclave (IAC) 2026",
-      "description": "A flagship event by Career Development Centre (CDC), IITRAM, designed to bridge the skill gap between classroom learning and real-world industry practices. Featuring keynote talks, panel discussions, student pitch competitions, project expo, and networking opportunities with industry leaders.",
+      "@id": "https://udgam-iac.iitram.in/#event",
+      "name": "Udgam 2026 - Industry–Academia Conclave (IAC)",
+      "alternateName": ["Udgam", "Udgam IITRAM", "IAC 2026", "IAC IITRAM"],
+      "description": "Udgam 2026 is CDC IITRAM's flagship Industry-Academia Conclave featuring keynotes, panel discussions, pitch competitions with ₹40,000 prize pool, and networking with industry leaders from iCreate and SSIP.",
+      "url": "https://udgam-iac.iitram.in",
       "startDate": "2026-02-27T09:00:00+05:30",
       "endDate": "2026-02-28T18:30:00+05:30",
       "eventStatus": "https://schema.org/EventScheduled",
@@ -58,25 +67,85 @@
           "streetAddress": "IITRAM Campus",
           "addressLocality": "Ahmedabad",
           "addressRegion": "Gujarat",
-          "addressCountry": "India"
+          "postalCode": "380026",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "23.0225",
+          "longitude": "72.5714"
         }
       },
+      "image": [
+        "https://udgam-iac.iitram.in/iac-2026-cover.png",
+        "https://udgam-iac.iitram.in/logo.png"
+      ],
       "organizer": {
-        "@type": "Organization",
-        "name": "Career Development Centre (CDC), IITRAM",
-        "url": "https://iitram.ac.in"
+        "@id": "https://udgam-iac.iitram.in/#organization"
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://iac2026.iitram.ac.in/contact",
-        "price": "0",
+        "url": "https://udgam-iac.iitram.in/students",
+        "price": "50",
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
-        "validFrom": "2025-12-01"
+        "validFrom": "2026-01-25"
       },
       "performer": {
-        "@type": "Organization",
+        "@type": "PerformingGroup",
         "name": "Industry Leaders and Academic Experts"
+      }
+    }
+    </script>
+
+  <!-- Organization Schema - SEO CRITICAL: For Google Knowledge Graph -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://udgam-iac.iitram.in/#organization",
+      "name": "Career Development Centre (CDC), IITRAM",
+      "alternateName": "CDC IITRAM",
+      "url": "https://udgam-iac.iitram.in",
+      "logo": "https://udgam-iac.iitram.in/logo.png",
+      "description": "Career Development Centre at Institute of Infrastructure Technology Research and Management organizing Udgam 2026",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ahmedabad",
+        "addressRegion": "Gujarat",
+        "postalCode": "380026",
+        "addressCountry": "IN"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "placement@iitram.ac.in",
+        "contactType": "Event Inquiries"
+      }
+    }
+    </script>
+
+  <!-- WebSite Schema - SEO CRITICAL: For site-wide search and branding -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://udgam-iac.iitram.in/#website",
+      "name": "Udgam 2026",
+      "alternateName": "IAC IITRAM 2026",
+      "url": "https://udgam-iac.iitram.in",
+      "description": "Official website for Udgam 2026 - Industry-Academia Conclave by CDC IITRAM",
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://udgam-iac.iitram.in/#organization",
+        "name": "Career Development Centre (CDC), IITRAM"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://udgam-iac.iitram.in/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
       }
     }
     </script>

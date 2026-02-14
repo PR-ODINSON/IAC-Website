@@ -14,7 +14,7 @@ const Home = () => {
     title: 'Udgam 2026 - Industry–Academia Conclave (IAC) | CDC IITRAM',
     description: 'Udgam 2026 is CDC IITRAM\'s flagship Industry-Academia Conclave. Join us Feb 27-28, 2026 for keynotes, panel discussions, ₹40,000 pitch competition, and networking with industry leaders.',
     keywords: 'Udgam, Udgam 2026, Udgam IITRAM, IAC IITRAM, Industry Academia Conclave, Engineering Event Ahmedabad, Student Competition Gujarat',
-    image: 'https://udgam.iitram.ac.in/iac-2026-cover.png',
+    image: 'https://udgam-iac.iitram.in/iac-2026-cover.png',
     type: 'website'
   });
 
@@ -26,9 +26,13 @@ const Home = () => {
       generateOrganizationSchema(),
       {
         "@type": "WebSite",
+        "@id": "https://udgam-iac.iitram.in/#website",
         "name": "Udgam 2026",
         "alternateName": "IAC IITRAM 2026",
-        "url": "https://udgam.iitram.ac.in"
+        "url": "https://udgam-iac.iitram.in",
+        "publisher": {
+          "@id": "https://udgam-iac.iitram.in/#organization"
+        }
       }
     ]
   });

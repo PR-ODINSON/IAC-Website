@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- SEO CRITICAL: Sitemap for https://udgam-iac.iitram.in -->
+<!-- All URLs must use the production domain: https://udgam-iac.iitram.in -->
+<!-- Submit this sitemap to Google Search Console after deployment -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
@@ -7,7 +10,7 @@
   
   <!-- Home Page -->
   <url>
-    <loc>https://udgam.iitram.ac.in/</loc>
+    <loc>https://udgam-iac.iitram.in/</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -15,7 +18,7 @@
   
   <!-- Schedule Page -->
   <url>
-    <loc>https://udgam.iitram.ac.in/schedule</loc>
+    <loc>https://udgam-iac.iitram.in/schedule</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -23,7 +26,7 @@
   
   <!-- For Students Page -->
   <url>
-    <loc>https://udgam.iitram.ac.in/students</loc>
+    <loc>https://udgam-iac.iitram.in/students</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -31,7 +34,7 @@
   
   <!-- For Companies Page -->
   <url>
-    <loc>https://udgam.iitram.ac.in/companies</loc>
+    <loc>https://udgam-iac.iitram.in/companies</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -39,7 +42,7 @@
   
   <!-- Sponsorship Page -->
   <url>
-    <loc>https://udgam.iitram.ac.in/sponsorship</loc>
+    <loc>https://udgam-iac.iitram.in/sponsorship</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -47,7 +50,7 @@
   
   <!-- Pitch Your Idea Page -->
   <url>
-    <loc>https://udgam.iitram.ac.in/pitch-your-idea</loc>
+    <loc>https://udgam-iac.iitram.in/pitch-your-idea</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -55,7 +58,7 @@
   
   <!-- Speakers Page -->
   <url>
-    <loc>https://udgam.iitram.ac.in/speakers</loc>
+    <loc>https://udgam-iac.iitram.in/speakers</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -63,7 +66,7 @@
   
   <!-- FAQs Page -->
   <url>
-    <loc>https://udgam.iitram.ac.in/faqs</loc>
+    <loc>https://udgam-iac.iitram.in/faqs</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -71,7 +74,7 @@
   
   <!-- Contact Page -->
   <url>
-    <loc>https://udgam.iitram.ac.in/contact</loc>
+    <loc>https://udgam-iac.iitram.in/contact</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

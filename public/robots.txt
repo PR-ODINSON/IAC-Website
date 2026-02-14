@@ -1,11 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemaps
-Sitemap: https://udgam.iitram.ac.in/sitemap.xml
-
-# Crawl-delay
-Crawl-delay: 0
-
-# Disallow admin or private paths (if any)
-# Disallow: /admin/
+Sitemap: https://udgam-iac.iitram.in/sitemap.xml
