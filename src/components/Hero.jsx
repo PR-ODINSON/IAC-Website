@@ -39,7 +39,7 @@ const Hero = () => {
             Flagship Event by CDC, IITRAM
           </div>
 
-          <h1 className="hero-title">
+          <h1 className="hero-title" aria-label="Udgam 2026 Industry Academia Conclave Event">
             Udgam<sup className="hero-iac">IAC</sup>
             <span className="hero-year">2026</span>
           </h1>
