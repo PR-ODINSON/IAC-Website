@@ -1,6 +1,10 @@
+
 import Hero from '../components/Hero';
+import SponsorTicker from '../components/SponsorTicker';
 import About from '../components/About';
 import Highlights from '../components/Highlights';
+import ChiefGuest from '../components/ChiefGuest';
+import { speakers } from '../data/speakers';
 import { Link } from 'react-router-dom';
 import usePageTitle from '../hooks/usePageTitle';
 import { useSEO, useStructuredData, generateEventSchema, generateOrganizationSchema } from '../utils/seo';
@@ -37,10 +41,41 @@ const Home = () => {
     ]
   });
 
+  // Chief Guest data (hardcoded for now, could be imported from a separate file)
+  const chiefGuest = {
+    name: "Dr. Sunil R Parekh – D. Litt. (HC)",
+    title: "SPoC Sustainability @ Zydus Group and Strategic Advisor @ Jubilant Bhartia Group",
+    organisation: "Chief Guest",
+    image: "/speakers/Sunil parekh.jpg",
+    linkedin: "https://www.linkedin.com/in/sunilrparekh/"
+  };
+
+  // Speakers for scroller (exclude chief guest if present)
+  const scrollerSpeakers = speakers;
+
   return (
     <main id="main-content" className="home-page">
+      <SponsorTicker />
       <Hero />
       <About />
+      <ChiefGuest guest={chiefGuest} />
+      {/* Speakers Scroller */}
+      <section className="speakers-scroller-section">
+        <div className="speakers-scroller-container">
+          <div className="speakers-scroller-track">
+            {scrollerSpeakers.map((speaker) => (
+              <div className="scroller-speaker-card" key={speaker.id}>
+                <img src={speaker.image} alt={speaker.name} className="scroller-speaker-img" />
+                <div className="scroller-speaker-info">
+                  <div className="scroller-speaker-name">{speaker.name}</div>
+                  <div className="scroller-speaker-title">{speaker.title}</div>
+                  <div className="scroller-speaker-org">{speaker.organisation}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       <Highlights />
 
       {/* Quick Links Section */}
@@ -82,15 +117,7 @@ const Home = () => {
               <p>Partnership opportunities</p>
             </Link>
 
-            <Link to="/sponsorship" className="quick-link-card">
-              <div className="quick-link-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3>Sponsorship</h3>
-              <p>Sponsorship packages</p>
-            </Link>
+
 
             <Link to="/pitch-your-idea" className="quick-link-card">
               <div className="quick-link-icon">
@@ -120,6 +147,23 @@ const Home = () => {
               </div>
               <h3>FAQs</h3>
               <p>Get your questions answered</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Sponsorship Enquiry Section */}
+      <section className="sponsorship-enquiry-section">
+        <div className="sponsorship-enquiry-container">
+          <div className="sponsorship-enquiry-content">
+            <h2>Want to enquire about sponsorship?</h2>
+            <p>Partner with Udgam 2026 and showcase your brand to a targeted audience of industry leaders and students.</p>
+            <Link to="/companies" className="enquiry-button">
+              Explore Sponsorship Opportunities
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
             </Link>
           </div>
         </div>

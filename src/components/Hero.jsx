@@ -35,6 +35,14 @@ const Hero = () => {
     <section className="hero">
       <div className="hero-container">
         <div className="hero-content">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfhujp6d8Iw99Hk3LS0v-aH2tb2w7G8pU9YEfm-A7GKuXCpdg/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hero-flasher"
+          >
+            Register for Free
+          </a>
           <div className="hero-badge">
             Flagship Event by CDC, IITRAM
           </div>

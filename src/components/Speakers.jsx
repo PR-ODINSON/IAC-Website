@@ -3,6 +3,18 @@ import { speakers } from '../data/speakers';
 import SkeletonGrid from './SkeletonLoader';
 import './Speakers.css';
 
+const LinkedInIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    width="20"
+    height="20"
+    fill="currentColor"
+    className="linkedin-icon"
+  >
+    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+  </svg>
+);
+
 const Speakers = () => {
   const [loading, setLoading] = useState(true);
 
@@ -10,10 +22,22 @@ const Speakers = () => {
     // Simulate loading delay
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
+
+  // Shuffle speakers array for random order
+  function shuffleArray(array) {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  const shuffledSpeakers = shuffleArray(speakers);
 
   return (
     <section className="speakers">
@@ -22,75 +46,45 @@ const Speakers = () => {
           <div className="section-label">Meet Our Experts</div>
           <h2 className="section-title">Speakers & Guests</h2>
           <p className="section-description">
-            Learn from industry leaders, academics, and entrepreneurs who are shaping the future 
-            of innovation and technology.
+            Learn from industry leaders, academics, and entrepreneurs who are shaping the future
+            of innovation and technology at IAC 2026.
           </p>
         </div>
 
         {loading ? (
-          <SkeletonGrid count={4} type="card" />
+          <SkeletonGrid count={6} type="card" />
         ) : (
-          <div className="speakers-coming-soon">
-            <div className="speakers-announcement">
-              <div className="announcement-icon" role="img" aria-label="Speakers announcement">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-                  <path strokeWidth="2" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4" strokeWidth="2"></circle>
-                  <path strokeWidth="2" d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                  <path strokeWidth="2" d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
-              </div>
-              <h3>Exciting Lineup Coming Soon</h3>
-              <p>
-                We're finalizing an exceptional roster of industry leaders, successful entrepreneurs, 
-                renowned academics, and innovation experts who will share their insights at Udgam 2026.
-              </p>
-            </div>
-            
-            <div className="speaker-categories">
-              <div className="category-card">
-                <div className="category-icon" role="img" aria-label="Industry leaders">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" strokeWidth="2"></rect>
-                    <path strokeWidth="2" d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                  </svg>
+          <div className="speakers-grid">
+            {shuffledSpeakers.map((speaker) => (
+              <div key={speaker.id} className="speaker-card">
+                <div className="speaker-image-container">
+                  <img
+                    src={speaker.image}
+                    alt={speaker.name}
+                    className="speaker-image"
+                    onError={(e) => {
+                      e.target.src = 'https://via.placeholder.com/300x300?text=Speaker';
+                    }}
+                  />
+                  {speaker.linkedin && (
+                    <a
+                      href={speaker.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="speaker-linkedin-float"
+                      aria-label={`${speaker.name}'s LinkedIn profile`}
+                    >
+                      <LinkedInIcon />
+                    </a>
+                  )}
                 </div>
-                <h4>Industry Leaders</h4>
-                <p>Top executives from Fortune 500 companies and emerging startups</p>
-              </div>
-              
-              <div className="category-card">
-                <div className="category-icon" role="img" aria-label="Entrepreneurs">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-                    <path strokeWidth="2" d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                    <polyline points="22 4 12 14.01 9 11.01" strokeWidth="2"></polyline>
-                  </svg>
+                <div className="speaker-content">
+                  <h3 className="speaker-name">{speaker.name}</h3>
+                  <p className="speaker-title">{speaker.title}</p>
+                  <p className="speaker-org">{speaker.organisation}</p>
                 </div>
-                <h4>Entrepreneurs</h4>
-                <p>Successful founders sharing their startup journey and insights</p>
               </div>
-              
-              <div className="category-card">
-                <div className="category-icon" role="img" aria-label="Academics">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-                    <path strokeWidth="2" d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                    <path strokeWidth="2" d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                  </svg>
-                </div>
-                <h4>Academics</h4>
-                <p>Renowned researchers and educators pioneering new fields</p>
-              </div>
-              
-              <div className="category-card">
-                <div className="category-icon" role="img" aria-label="Innovators">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" strokeWidth="2"></polygon>
-                  </svg>
-                </div>
-                <h4>Innovators</h4>
-                <p>Tech visionaries driving change in AI, EV, and Smart Cities</p>
-              </div>
-            </div>
+            ))}
           </div>
         )}
       </div>

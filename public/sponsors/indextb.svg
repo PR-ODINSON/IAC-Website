@@ -1,0 +1,34 @@
+<svg viewBox="0 0 250 73" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+x="0px" y="0px" width="250" height="73">
+<style>
+#svg_logo {
+  clip-path: url(#clipping_logo);
+}
+
+svg .anim-rect{
+  animation-name: logoMoves;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: forwards;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logoMoves { 
+  0% { transform: translateX(0); }
+  100%   { transform: translateX(480px); }
+}
+</style>
+	<clipPath id="clipping_logo">
+		<text x="125" y="36.5" text-anchor="middle" alignment-baseline="top" 
+		font-family="Helvetica, Arial, sans-serif" font-size="50" font-weight="bold" 
+		letter-spacing="4" id="svg_logo" stroke-width="5" stroke="#000" fill="#fff">iNDEXTb</text>
+  	</clipPath>
+	<text x="50%" y="53" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" letter-spacing="0.3" stroke-width="1" fill="#fff" lengthAdjust="250" >INVESTMENT PROMOTION ORGANISATION</text>
+	<rect x="5" y="58" width="240" height="15" fill="#14679C" />
+    <text x="50%" y="71" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" letter-spacing="1.6" stroke-width="1" fill="#fff">GOVERNMENT OF GUJARAT</text>
+	<g clip-path="url(#clipping_logo)"> 
+		<rect x="0" y="0" width="250" height="97" fill="#fff" />
+		<rect class="anim-rect" x="0" y="0" width="20" height="50" fill="#14679C" />
+	</g>
+</svg>

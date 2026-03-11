@@ -106,7 +106,7 @@ const PitchYourIdea = () => {
 
           <div className="pitch-hero-actions">
             <a
-              href="mailto:CDC_chair@iitram.ac.in?subject=Pitch Your Idea Registration - Udgam 2026"
+              href="https://forms.gle/rPZyUvzu7PHoFDHL9"
               className="pitch-cta-primary"
             >
               Register Your Idea

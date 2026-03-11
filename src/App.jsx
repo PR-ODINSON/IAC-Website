@@ -13,6 +13,8 @@ import PitchYourIdea from './pages/PitchYourIdea';
 import ContactPage from './pages/ContactPage';
 import FAQPage from './pages/FAQPage';
 import NotFound from './pages/NotFound';
+import PanelDiscussion from './pages/PanelDiscussion';
+import EventHighlights from './pages/EventHighlights';
 import './App.css';
 
 function App() {
@@ -27,12 +29,14 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/schedule" element={<SchedulePage />} />
           <Route path="/speakers" element={<SpeakersPage />} />
+          <Route path="/panel-discussion" element={<PanelDiscussion />} />
           <Route path="/students" element={<StudentsPage />} />
           <Route path="/companies" element={<CompaniesPage />} />
           <Route path="/sponsorship" element={<SponsorshipPage />} />
           <Route path="/pitch-your-idea" element={<PitchYourIdea />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/faqs" element={<FAQPage />} />
+          <Route path="/event-highlights" element={<EventHighlights />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
